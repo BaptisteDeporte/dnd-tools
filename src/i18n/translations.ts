@@ -1,8 +1,8 @@
-import type { Language } from "@/features/spells/data/types"
+import type { Language } from "@/features/spells/data/types";
 
 const translations = {
   en: {
-    "app.title": "Better D&D",
+    "app.title": "D&D Tools",
     "spells.title": "Spells",
     "spells.count": "{count} spells",
     "filter.level": "Level",
@@ -56,12 +56,12 @@ const translations = {
     "legend.M": "Material — the spell requires physical components",
     "share.copy": "Share",
     "share.copied": "Copied!",
-    "all": "All",
-    "yes": "Yes",
-    "no": "No",
+    all: "All",
+    yes: "Yes",
+    no: "No",
   },
   fr: {
-    "app.title": "Better D&D",
+    "app.title": "D&D Tools",
     "spells.title": "Sorts",
     "spells.count": "{count} sorts",
     "filter.level": "Niveau",
@@ -115,19 +115,23 @@ const translations = {
     "legend.M": "Matérielle — le sort nécessite des composantes physiques",
     "share.copy": "Partager",
     "share.copied": "Copié !",
-    "all": "Tous",
-    "yes": "Oui",
-    "no": "Non",
+    all: "Tous",
+    yes: "Oui",
+    no: "Non",
   },
-} as const
+} as const;
 
-export type TranslationKey = keyof (typeof translations)["en"]
+export type TranslationKey = keyof (typeof translations)["en"];
 
-export const t = (lang: Language, key: TranslationKey, params?: Record<string, string | number>): string => {
-  const value = translations[lang][key]
-  if (!params) return value
+export const t = (
+  lang: Language,
+  key: TranslationKey,
+  params?: Record<string, string | number>,
+): string => {
+  const value = translations[lang][key];
+  if (!params) return value;
   return Object.entries(params).reduce<string>(
     (acc, [k, v]) => acc.replace(`{${k}}`, String(v)),
-    value
-  )
-}
+    value,
+  );
+};
