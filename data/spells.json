@@ -1,0 +1,6536 @@
+{
+  "enlarge-reduce": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "aid": {
+    "level": 2,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Ranger"
+    ]
+  },
+  "alarm": {
+    "level": 1,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Ranger",
+      "Wizard"
+    ]
+  },
+  "befuddlement": {
+    "level": 8,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "planar-ally": {
+    "level": 6,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "enhance-ability": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Ranger",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "friends": {
+    "level": 0,
+    "school": "enchantment",
+    "components": [
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "animal-friendship": {
+    "level": 1,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "animate-dead": {
+    "level": 3,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Wizard"
+    ]
+  },
+  "animate-objects": {
+    "level": 5,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "nondetection": {
+    "level": 3,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Ranger",
+      "Wizard"
+    ]
+  },
+  "calm-emotions": {
+    "level": 2,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric"
+    ]
+  },
+  "seeming": {
+    "level": 5,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "find-steed": {
+    "level": 2,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  "find-familiar": {
+    "level": 1,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "call-lightning": {
+    "level": 3,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "elemental-weapon": {
+    "level": 3,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Druid",
+      "Paladin",
+      "Ranger"
+    ]
+  },
+  "magic-weapon": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Paladin",
+      "Ranger",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "spiritual-weapon": {
+    "level": 2,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "armor-of-agathys": {
+    "level": 1,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  "mage-armor": {
+    "level": 1,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "death-armor": {
+    "level": 2,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "time-stop": {
+    "level": 9,
+    "school": "transmutation",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "acid-splash": {
+    "level": 0,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "phantasmal-killer": {
+    "level": 4,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Wizard"
+    ]
+  },
+  "guidance": {
+    "level": 0,
+    "school": "divination",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid"
+    ]
+  },
+  "augury": {
+    "level": 2,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Wizard"
+    ]
+  },
+  "aura-of-purity": {
+    "level": 4,
+    "school": "abjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Cleric",
+      "Paladin"
+    ]
+  },
+  "aura-of-life": {
+    "level": 4,
+    "school": "abjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Paladin"
+    ]
+  },
+  "aura-of-vitality": {
+    "level": 3,
+    "school": "abjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Paladin"
+    ]
+  },
+  "crusader-s-mantle": {
+    "level": 3,
+    "school": "evocation",
+    "components": [
+      "V"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  "nystul-s-magic-aura": {
+    "level": 2,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "holy-aura": {
+    "level": 8,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "antipathy-sympathy": {
+    "level": 8,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Wizard"
+    ]
+  },
+  "glibness": {
+    "level": 8,
+    "school": "enchantment",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Warlock"
+    ]
+  },
+  "goodberry": {
+    "level": 1,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "banishment": {
+    "level": 4,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Paladin",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "blade-barrier": {
+    "level": 6,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "bless": {
+    "level": 1,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Paladin"
+    ]
+  },
+  "inflict-wounds": {
+    "level": 1,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "magic-mouth": {
+    "level": 2,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Wizard"
+    ]
+  },
+  "shield": {
+    "level": 1,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "cacophonic-shield": {
+    "level": 3,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "fire-shield": {
+    "level": 4,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "shield-of-faith": {
+    "level": 1,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Paladin"
+    ]
+  },
+  "poison-spray": {
+    "level": 0,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "fireball": {
+    "level": 3,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "delayed-blast-fireball": {
+    "level": 7,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "gust-of-wind": {
+    "level": 2,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "cloudkill": {
+    "level": 5,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "forcecage": {
+    "level": 7,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "vampiric-touch": {
+    "level": 3,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "blindness-deafness": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "circle-of-death": {
+    "level": 6,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "circle-of-power": {
+    "level": 5,
+    "school": "abjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Cleric",
+      "Paladin",
+      "Wizard"
+    ]
+  },
+  "teleportation-circle": {
+    "level": 5,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "magic-circle": {
+    "level": 3,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Paladin",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "chain-lightning": {
+    "level": 6,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "antimagic-field": {
+    "level": 8,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Wizard"
+    ]
+  },
+  "shapechange": {
+    "level": 9,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Wizard"
+    ]
+  },
+  "plane-shift": {
+    "level": 7,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "dirge": {
+    "level": 6,
+    "school": "enchantment",
+    "components": [
+      "V"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Bard",
+      "Cleric"
+    ]
+  },
+  "charm-monster": {
+    "level": 4,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "charm-person": {
+    "level": 1,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "blinding-smite": {
+    "level": 3,
+    "school": "evocation",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  "wrathful-smite": {
+    "level": 1,
+    "school": "necromancy",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  "searing-smite": {
+    "level": 1,
+    "school": "evocation",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  "shining-smite": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  "staggering-smite": {
+    "level": 4,
+    "school": "enchantment",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  "thunderous-smite": {
+    "level": 1,
+    "school": "evocation",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  "divine-smite": {
+    "level": 1,
+    "school": "evocation",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  "banishing-smite": {
+    "level": 5,
+    "school": "conjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  "tasha-s-bubbling-cauldron": {
+    "level": 6,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "mordenkainen-s-faithful-hound": {
+    "level": 4,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "clairvoyance": {
+    "level": 3,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "blink": {
+    "level": 3,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "clone": {
+    "level": 8,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "leomund-s-secret-chest": {
+    "level": 4,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "flame-strike": {
+    "level": 5,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "sending": {
+    "level": 3,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Wizard"
+    ]
+  },
+  "speak-with-animals": {
+    "level": 1,
+    "school": "divination",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Ranger",
+      "Warlock"
+    ]
+  },
+  "speak-with-dead": {
+    "level": 3,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Wizard"
+    ]
+  },
+  "speak-with-plants": {
+    "level": 3,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "commune": {
+    "level": 5,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "commune-with-nature": {
+    "level": 5,
+    "school": "divination",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "comprehend-languages": {
+    "level": 1,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "compulsion": {
+    "level": 4,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard"
+    ]
+  },
+  "cone-of-cold": {
+    "level": 5,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "confusion": {
+    "level": 4,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "contact-other-plane": {
+    "level": 5,
+    "school": "divination",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "chill-touch": {
+    "level": 0,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "contagion": {
+    "level": 5,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid"
+    ]
+  },
+  "harm": {
+    "level": 6,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "backlash": {
+    "level": 4,
+    "school": "abjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "counterspell": {
+    "level": 3,
+    "school": "abjuration",
+    "components": [
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "control-water": {
+    "level": 4,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Wizard"
+    ]
+  },
+  "control-weather": {
+    "level": 8,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Wizard"
+    ]
+  },
+  "summon-aberration": {
+    "level": 4,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "summon-construct": {
+    "level": 4,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "summon-elemental": {
+    "level": 4,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Druid",
+      "Ranger",
+      "Wizard"
+    ]
+  },
+  "summon-beast": {
+    "level": 2,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "summon-celestial": {
+    "level": 5,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Cleric",
+      "Paladin"
+    ]
+  },
+  "summon-dragon": {
+    "level": 5,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "summon-fey": {
+    "level": 3,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Druid",
+      "Ranger",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "summon-fiend": {
+    "level": 6,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "summon-undead": {
+    "level": 3,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "drawmij-s-instant-summons": {
+    "level": 6,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "antilife-shell": {
+    "level": 5,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "rope-trick": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "cordon-of-arrows": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Ranger"
+    ]
+  },
+  "color-spray": {
+    "level": 1,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "true-strike": {
+    "level": 0,
+    "school": "divination",
+    "components": [
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "thunderclap": {
+    "level": 0,
+    "school": "evocation",
+    "components": [
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "crown-of-madness": {
+    "level": 2,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "ice-knife": {
+    "level": 1,
+    "school": "conjuration",
+    "components": [
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "creation": {
+    "level": 5,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "create-undead": {
+    "level": 6,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "create-food-and-water": {
+    "level": 3,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Paladin"
+    ]
+  },
+  "create-or-destroy-water": {
+    "level": 1,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid"
+    ]
+  },
+  "spike-growth": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "plant-growth": {
+    "level": 3,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "shillelagh": {
+    "level": 0,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "otto-s-irresistible-dance": {
+    "level": 6,
+    "school": "enchantment",
+    "components": [
+      "V"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Wizard"
+    ]
+  },
+  "knock": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "eldritch-blast": {
+    "level": 0,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  "maze": {
+    "level": 8,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "disguise-self": {
+    "level": 1,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "remove-curse": {
+    "level": 3,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Paladin",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "demiplane": {
+    "level": 8,
+    "school": "conjuration",
+    "components": [
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "disintegrate": {
+    "level": 6,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "see-invisibility": {
+    "level": 2,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "detect-magic": {
+    "level": 1,
+    "school": "divination",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Ranger",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "detect-thoughts": {
+    "level": 2,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "find-traps": {
+    "level": 2,
+    "school": "divination",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "detect-evil-and-good": {
+    "level": 1,
+    "school": "divination",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Paladin"
+    ]
+  },
+  "detect-poison-and-disease": {
+    "level": 1,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Ranger"
+    ]
+  },
+  "enthrall": {
+    "level": 2,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Warlock"
+    ]
+  },
+  "tenser-s-floating-disk": {
+    "level": 1,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "sequester": {
+    "level": 7,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "dispel-magic": {
+    "level": 3,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Ranger",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "dispel-evil-and-good": {
+    "level": 5,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Paladin"
+    ]
+  },
+  "divination": {
+    "level": 4,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Wizard"
+    ]
+  },
+  "finger-of-death": {
+    "level": 7,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "dominate-beast": {
+    "level": 4,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger",
+      "Sorcerer"
+    ]
+  },
+  "dominate-monster": {
+    "level": 8,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "dominate-person": {
+    "level": 5,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "tongues": {
+    "level": 3,
+    "school": "divination",
+    "components": [
+      "V",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "mislead": {
+    "level": 5,
+    "school": "illusion",
+    "components": [
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "gentle-repose": {
+    "level": 2,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Paladin",
+      "Wizard"
+    ]
+  },
+  "druidcraft": {
+    "level": 0,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "compelled-duel": {
+    "level": 1,
+    "school": "enchantment",
+    "components": [
+      "V"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  "wardaway": {
+    "level": 1,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Paladin",
+      "Wizard"
+    ]
+  },
+  "lightning-bolt": {
+    "level": 3,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "sunburst": {
+    "level": 8,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "elementalism": {
+    "level": 0,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "prismatic-spray": {
+    "level": 7,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "imprisonment": {
+    "level": 9,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "entangle": {
+    "level": 1,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "weird": {
+    "level": 9,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "planar-binding": {
+    "level": 5,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "mordenkainen-s-sword": {
+    "level": 7,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Wizard"
+    ]
+  },
+  "mind-spike": {
+    "level": 2,
+    "school": "divination",
+    "components": [
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "sorcerous-burst": {
+    "level": 0,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  "mind-blank": {
+    "level": 8,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Wizard"
+    ]
+  },
+  "spirit-guardians": {
+    "level": 3,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "elminster-s-elusion": {
+    "level": 2,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "feign-death": {
+    "level": 3,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Wizard"
+    ]
+  },
+  "holy-star-of-mystra": {
+    "level": 8,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Cleric",
+      "Wizard"
+    ]
+  },
+  "awaken": {
+    "level": 5,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid"
+    ]
+  },
+  "fabricate": {
+    "level": 4,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "stone-shape": {
+    "level": 4,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Wizard"
+    ]
+  },
+  "divine-favor": {
+    "level": 1,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  "heroes-feast": {
+    "level": 6,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid"
+    ]
+  },
+  "feather-fall": {
+    "level": 1,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "continual-flame": {
+    "level": 2,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Wizard"
+    ]
+  },
+  "sacred-flame": {
+    "level": 0,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "produce-flame": {
+    "level": 0,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "insect-plague": {
+    "level": 5,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Sorcerer"
+    ]
+  },
+  "melf-s-acid-arrow": {
+    "level": 2,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "lightning-arrow": {
+    "level": 3,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Ranger"
+    ]
+  },
+  "blight": {
+    "level": 4,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "blur": {
+    "level": 2,
+    "school": "illusion",
+    "components": [
+      "V"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "fount-of-moonlight": {
+    "level": 4,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Bard",
+      "Druid"
+    ]
+  },
+  "phantasmal-force": {
+    "level": 2,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "etherealness": {
+    "level": 7,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "gaseous-form": {
+    "level": 3,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "tasha-s-hideous-laughter": {
+    "level": 1,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "thorn-whip": {
+    "level": 0,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "misty-step": {
+    "level": 2,
+    "school": "conjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "shatter": {
+    "level": 2,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "steel-wind-strike": {
+    "level": 5,
+    "school": "conjuration",
+    "components": [
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Ranger",
+      "Wizard"
+    ]
+  },
+  "ensnaring-strike": {
+    "level": 1,
+    "school": "conjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Ranger"
+    ]
+  },
+  "meld-into-stone": {
+    "level": 3,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "guardian-of-faith": {
+    "level": 4,
+    "school": "conjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "toll-the-dead": {
+    "level": 0,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Cleric",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "move-earth": {
+    "level": 6,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "globe-of-invulnerability": {
+    "level": 6,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "glyph-of-warding": {
+    "level": 3,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Wizard"
+    ]
+  },
+  "grease": {
+    "level": 1,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "longstrider": {
+    "level": 1,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Ranger",
+      "Wizard"
+    ]
+  },
+  "hail-of-thorns": {
+    "level": 1,
+    "school": "conjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Ranger"
+    ]
+  },
+  "heal": {
+    "level": 6,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid"
+    ]
+  },
+  "mass-heal": {
+    "level": 9,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "haste": {
+    "level": 3,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "heroism": {
+    "level": 1,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Paladin"
+    ]
+  },
+  "deryan-s-helpful-homunculi": {
+    "level": 2,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Cleric",
+      "Wizard"
+    ]
+  },
+  "identify": {
+    "level": 1,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Wizard"
+    ]
+  },
+  "minor-illusion": {
+    "level": 0,
+    "school": "illusion",
+    "components": [
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "programmed-illusion": {
+    "level": 6,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Wizard"
+    ]
+  },
+  "major-image": {
+    "level": 3,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "mirror-image": {
+    "level": 2,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "project-image": {
+    "level": 7,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Wizard"
+    ]
+  },
+  "silent-image": {
+    "level": 1,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "hold-monster": {
+    "level": 5,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "hold-person": {
+    "level": 2,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "bane": {
+    "level": 1,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Warlock"
+    ]
+  },
+  "songal-s-elemental-suffusion": {
+    "level": 5,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "command": {
+    "level": 1,
+    "school": "enchantment",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Paladin"
+    ]
+  },
+  "giant-insect": {
+    "level": 4,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "forbiddance": {
+    "level": 6,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "reverse-gravity": {
+    "level": 7,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "invisibility": {
+    "level": 2,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "greater-invisibility": {
+    "level": 4,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "conjure-animals": {
+    "level": 3,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "conjure-constructs": {
+    "level": 3,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "conjure-elemental": {
+    "level": 5,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Wizard"
+    ]
+  },
+  "conjure-minor-elementals": {
+    "level": 4,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Wizard"
+    ]
+  },
+  "conjure-woodland-beings": {
+    "level": 4,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "conjure-celestial": {
+    "level": 7,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "conjure-fey": {
+    "level": 6,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "conjure-barrage": {
+    "level": 3,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Ranger"
+    ]
+  },
+  "conjure-volley": {
+    "level": 5,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Ranger"
+    ]
+  },
+  "blade-of-disaster": {
+    "level": 9,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "flame-blade": {
+    "level": 2,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer"
+    ]
+  },
+  "laeral-s-silver-lance": {
+    "level": 3,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Cleric",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "slow": {
+    "level": 3,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "levitate": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "grasping-vine": {
+    "level": 4,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "freedom-of-movement": {
+    "level": 4,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "warding-bond": {
+    "level": 2,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Paladin"
+    ]
+  },
+  "rary-s-telepathic-bond": {
+    "level": 5,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Wizard"
+    ]
+  },
+  "locate-animals-or-plants": {
+    "level": 2,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "locate-object": {
+    "level": 2,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Ranger",
+      "Wizard"
+    ]
+  },
+  "locate-creature": {
+    "level": 4,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Ranger",
+      "Wizard"
+    ]
+  },
+  "beacon-of-hope": {
+    "level": 3,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "spellfire-flare": {
+    "level": 1,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "faerie-fire": {
+    "level": 1,
+    "school": "evocation",
+    "components": [
+      "V"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid"
+    ]
+  },
+  "light": {
+    "level": 0,
+    "school": "evocation",
+    "components": [
+      "V",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "daylight": {
+    "level": 3,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Ranger",
+      "Sorcerer"
+    ]
+  },
+  "dancing-lights": {
+    "level": 0,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "bigby-s-hand": {
+    "level": 5,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "mage-hand": {
+    "level": 0,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "burning-hands": {
+    "level": 1,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "bestow-curse": {
+    "level": 3,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Wizard"
+    ]
+  },
+  "hex": {
+    "level": 1,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  "mordenkainen-s-magnificent-mansion": {
+    "level": 7,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Wizard"
+    ]
+  },
+  "alustriel-s-mooncloak": {
+    "level": 5,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Ranger",
+      "Wizard"
+    ]
+  },
+  "water-walk": {
+    "level": 3,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Ranger",
+      "Sorcerer"
+    ]
+  },
+  "doomtide": {
+    "level": 4,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Warlock"
+    ]
+  },
+  "hunter-s-mark": {
+    "level": 1,
+    "school": "divination",
+    "components": [
+      "V"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Ranger"
+    ]
+  },
+  "eyebite": {
+    "level": 6,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "message": {
+    "level": 0,
+    "school": "transmutation",
+    "components": [
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "animal-messenger": {
+    "level": 2,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "heat-metal": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid"
+    ]
+  },
+  "polymorph": {
+    "level": 4,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "animal-shapes": {
+    "level": 8,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "true-polymorph": {
+    "level": 9,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "mirage-arcane": {
+    "level": 7,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Wizard"
+    ]
+  },
+  "alter-self": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "modify-memory": {
+    "level": 5,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Wizard"
+    ]
+  },
+  "phantom-steed": {
+    "level": 3,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "vicious-mockery": {
+    "level": 0,
+    "school": "enchantment",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard"
+    ]
+  },
+  "healing-word": {
+    "level": 1,
+    "school": "abjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid"
+    ]
+  },
+  "mass-healing-word": {
+    "level": 3,
+    "school": "abjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric"
+    ]
+  },
+  "power-word-stun": {
+    "level": 8,
+    "school": "enchantment",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "power-word-fortify": {
+    "level": 7,
+    "school": "enchantment",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Bard",
+      "Cleric"
+    ]
+  },
+  "power-word-heal": {
+    "level": 9,
+    "school": "enchantment",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric"
+    ]
+  },
+  "power-word-kill": {
+    "level": 9,
+    "school": "enchantment",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "word-of-radiance": {
+    "level": 0,
+    "school": "evocation",
+    "components": [
+      "V",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "word-of-recall": {
+    "level": 6,
+    "school": "conjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "hypnotic-pattern": {
+    "level": 3,
+    "school": "illusion",
+    "components": [
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "wall-of-thorns": {
+    "level": 6,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "wall-of-fire": {
+    "level": 4,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "wall-of-force": {
+    "level": 5,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "wall-of-ice": {
+    "level": 6,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "wall-of-stone": {
+    "level": 5,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "wind-wall": {
+    "level": 3,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "prismatic-wall": {
+    "level": 9,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Wizard"
+    ]
+  },
+  "dissonant-whispers": {
+    "level": 1,
+    "school": "enchantment",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard"
+    ]
+  },
+  "legend-lore": {
+    "level": 5,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Wizard"
+    ]
+  },
+  "fog-cloud": {
+    "level": 1,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "incendiary-cloud": {
+    "level": 8,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "stinking-cloud": {
+    "level": 3,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "cloud-of-daggers": {
+    "level": 2,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "meteor-swarm": {
+    "level": 9,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "arcane-eye": {
+    "level": 4,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "chromatic-orb": {
+    "level": 1,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "find-the-path": {
+    "level": 6,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid"
+    ]
+  },
+  "divine-word": {
+    "level": 7,
+    "school": "evocation",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "tree-stride": {
+    "level": 5,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "pass-without-trace": {
+    "level": 2,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "passwall": {
+    "level": 5,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "spider-climb": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "barkskin": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "stoneskin": {
+    "level": 4,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "beast-sense": {
+    "level": 2,
+    "school": "divination",
+    "components": [
+      "S"
+    ],
+    "concentration": true,
+    "ritual": true,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Druid",
+      "Ranger"
+    ]
+  },
+  "synaptic-static": {
+    "level": 5,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "leomund-s-tiny-hut": {
+    "level": 3,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Wizard"
+    ]
+  },
+  "flesh-to-stone": {
+    "level": 6,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "fear": {
+    "level": 3,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "mind-sliver": {
+    "level": 0,
+    "school": "enchantment",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "shocking-grasp": {
+    "level": 0,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "gate": {
+    "level": 9,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "arcane-gate": {
+    "level": 6,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "dimension-door": {
+    "level": 4,
+    "school": "conjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "starry-wisp": {
+    "level": 0,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid"
+    ]
+  },
+  "contingency": {
+    "level": 6,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "foresight": {
+    "level": 9,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "yolande-s-regal-presence": {
+    "level": 5,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Bard",
+      "Wizard"
+    ]
+  },
+  "prestidigitation": {
+    "level": 0,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "prayer-of-healing": {
+    "level": 2,
+    "school": "abjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Paladin"
+    ]
+  },
+  "magic-missile": {
+    "level": 1,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "astral-projection": {
+    "level": 9,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "protection-from-energy": {
+    "level": 3,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Ranger",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "death-ward": {
+    "level": 4,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Paladin"
+    ]
+  },
+  "protection-from-evil-and-good": {
+    "level": 1,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "protection-from-poison": {
+    "level": 2,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Ranger"
+    ]
+  },
+  "guards-and-wards": {
+    "level": 6,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Wizard"
+    ]
+  },
+  "purify-food-and-drink": {
+    "level": 1,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Paladin"
+    ]
+  },
+  "geas": {
+    "level": 5,
+    "school": "enchantment",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Wizard"
+    ]
+  },
+  "raise-dead": {
+    "level": 5,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Paladin"
+    ]
+  },
+  "ray-of-enfeeblement": {
+    "level": 2,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "scorching-ray": {
+    "level": 2,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "ray-of-frost": {
+    "level": 0,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "moonbeam": {
+    "level": 2,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "sunbeam": {
+    "level": 6,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "ray-of-sickness": {
+    "level": 1,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "guiding-bolt": {
+    "level": 1,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "regenerate": {
+    "level": 7,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid"
+    ]
+  },
+  "reincarnate": {
+    "level": 5,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "mending": {
+    "level": 0,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "expeditious-retreat": {
+    "level": 1,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "hellish-rebuke": {
+    "level": 1,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  "resistance": {
+    "level": 0,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid"
+    ]
+  },
+  "water-breathing": {
+    "level": 3,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "lesser-restoration": {
+    "level": 2,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Ranger"
+    ]
+  },
+  "greater-restoration": {
+    "level": 5,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Ranger"
+    ]
+  },
+  "resurrection": {
+    "level": 7,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric"
+    ]
+  },
+  "true-resurrection": {
+    "level": 9,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid"
+    ]
+  },
+  "revivify": {
+    "level": 3,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Ranger"
+    ]
+  },
+  "hallow": {
+    "level": 5,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "sanctuary": {
+    "level": 1,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "mordenkainen-s-private-sanctum": {
+    "level": 4,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "jump": {
+    "level": 1,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "scrying": {
+    "level": 5,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "homunculus-servant": {
+    "level": 2,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Eberron: Forge of the Artificer",
+    "classes": [
+      "Artificer"
+    ]
+  },
+  "unseen-servant": {
+    "level": 1,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "silence": {
+    "level": 2,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Ranger"
+    ]
+  },
+  "simulacrum": {
+    "level": 7,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "false-life": {
+    "level": 1,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "cure-wounds": {
+    "level": 1,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Ranger"
+    ]
+  },
+  "mass-cure-wounds": {
+    "level": 5,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid"
+    ]
+  },
+  "sleep": {
+    "level": 1,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "dream": {
+    "level": 5,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "dragon-s-breath": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "wish": {
+    "level": 9,
+    "school": "conjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "flaming-sphere": {
+    "level": 2,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "vitriolic-sphere": {
+    "level": 4,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "otiluke-s-freezing-sphere": {
+    "level": 6,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "otiluke-s-resilient-sphere": {
+    "level": 4,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "elminster-s-effulgent-spheres": {
+    "level": 6,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "spare-the-dying": {
+    "level": 0,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid"
+    ]
+  },
+  "suggestion": {
+    "level": 2,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "mass-suggestion": {
+    "level": 6,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "symbol": {
+    "level": 7,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Wizard"
+    ]
+  },
+  "telekinesis": {
+    "level": 5,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "telepathy": {
+    "level": 8,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "teleport": {
+    "level": 7,
+    "school": "conjuration",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "fire-storm": {
+    "level": 7,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Sorcerer"
+    ]
+  },
+  "ice-storm": {
+    "level": 4,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "spellfire-storm": {
+    "level": 4,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "sleet-storm": {
+    "level": 3,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "jallarzi-s-storm-of-radiance": {
+    "level": 5,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "storm-of-vengeance": {
+    "level": 9,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "darkness": {
+    "level": 2,
+    "school": "evocation",
+    "components": [
+      "V",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "arms-of-hadar": {
+    "level": 1,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  "evard-s-black-tentacles": {
+    "level": 4,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "hallucinatory-terrain": {
+    "level": 4,
+    "school": "illusion",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "illusory-script": {
+    "level": 1,
+    "school": "illusion",
+    "components": [
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": true,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "thaumaturgy": {
+    "level": 0,
+    "school": "transmutation",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric"
+    ]
+  },
+  "web": {
+    "level": 2,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "fire-bolt": {
+    "level": 0,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "witch-bolt": {
+    "level": 1,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "simbul-s-synostodweomer": {
+    "level": 7,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "earthquake": {
+    "level": 8,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Sorcerer"
+    ]
+  },
+  "tsunami": {
+    "level": 8,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "magic-jar": {
+    "level": 6,
+    "school": "necromancy",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "destructive-wave": {
+    "level": 5,
+    "school": "evocation",
+    "components": [
+      "V"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  "thunderwave": {
+    "level": 1,
+    "school": "evocation",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "wind-walk": {
+    "level": 6,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "arcane-lock": {
+    "level": 2,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Wizard"
+    ]
+  },
+  "swift-quiver": {
+    "level": 5,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Ranger"
+    ]
+  },
+  "arcane-vigor": {
+    "level": 2,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "sylune-s-viper": {
+    "level": 3,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Forgotten Realms: Heroes of Faerûn",
+    "classes": [
+      "Druid",
+      "Wizard"
+    ]
+  },
+  "darkvision": {
+    "level": 2,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid",
+      "Ranger",
+      "Sorcerer",
+      "Wizard"
+    ]
+  },
+  "true-seeing": {
+    "level": 6,
+    "school": "divination",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "transport-via-plants": {
+    "level": 6,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Druid"
+    ]
+  },
+  "blade-ward": {
+    "level": 0,
+    "school": "abjuration",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "fly": {
+    "level": 3,
+    "school": "transmutation",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ]
+  },
+  "hunger-of-hadar": {
+    "level": 3,
+    "school": "conjuration",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "concentration": true,
+    "ritual": false,
+    "source": "Player´s Handbook 2024",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  "zone-of-truth": {
+    "level": 2,
+    "school": "enchantment",
+    "components": [
+      "V",
+      "S"
+    ],
+    "concentration": false,
+    "ritual": false,
+    "source": "Player´s Handbook 2024 (BR)",
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Paladin"
+    ]
+  }
+}

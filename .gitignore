@@ -1,0 +1,7 @@
+__pycache__
+.claude
+.env*
+!.env.dist
+dist
+node_modules
+scripts
