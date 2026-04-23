@@ -46,6 +46,8 @@ export interface Spell extends SpellMechanics, SpellI18n {
   slug: string
 }
 
+export type GrimoireFilterMode = "exclude" | "include-all"
+
 export interface FilterState {
   levels: number[]
   schools: School[]
@@ -55,6 +57,8 @@ export interface FilterState {
   ritual: boolean | null
   sources: string[]
   search: string
+  grimoires: string[]
+  grimoireMode: GrimoireFilterMode
 }
 
 export const emptyFilters: FilterState = {
@@ -66,4 +70,6 @@ export const emptyFilters: FilterState = {
   ritual: null,
   sources: [],
   search: "",
+  grimoires: [],
+  grimoireMode: "exclude",
 }

@@ -6,6 +6,7 @@ import { useSpellTable } from "./hooks/useSpellTable"
 import { SpellFilters } from "./components/SpellFilters"
 import { SpellTable } from "./components/SpellTable"
 import { SpellDetailSheet } from "./components/SpellDetailSheet"
+import { SpellSelectionBar } from "./components/SpellSelectionBar"
 
 const COMPONENT_KEYS = ["V", "S", "M"] as const
 
@@ -39,6 +40,8 @@ export const SpellsPage = () => {
     hasActiveFilters,
     filteredCount,
     totalCount,
+    selectedSlugs,
+    clearSelection,
   } = useSpellTable(spells)
 
   return (
@@ -57,6 +60,7 @@ export const SpellsPage = () => {
         spell={selectedSpell}
         onClose={() => setSelectedSpell(null)}
       />
+      <SpellSelectionBar selectedSlugs={selectedSlugs} onClear={clearSelection} />
     </div>
   )
 }

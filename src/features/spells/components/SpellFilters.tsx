@@ -2,6 +2,7 @@ import { useState } from "react"
 import type { FilterState, School, DndClass, Component } from "../data/types"
 import { allSources } from "../data/spells"
 import { useLanguage } from "@/i18n/LanguageContext"
+import { useGrimoiresContext } from "@/features/grimoires/GrimoiresContext"
 import { Button } from "@/components/ui/button"
 import { MultiSelect } from "./MultiSelect"
 import { TriStateToggle } from "./TriStateToggle"
@@ -62,6 +63,56 @@ const ShareButton = ({ hasActiveFilters }: { hasActiveFilters: boolean }) => {
     <Button variant="default" size="lg" onClick={handleShare}>
       {copied ? t("share.copied") : t("share.copy")}
     </Button>
+  )
+}
+
+const GrimoireFilterBar = ({
+  filters,
+  updateFilter,
+}: Pick<SpellFiltersProps, "filters" | "updateFilter">) => {
+  const { t } = useLanguage()
+  const { grimoires } = useGrimoiresContext()
+
+  if (grimoires.length === 0) return null
+
+  const grimoireOptions = grimoires.map((g) => ({
+    value: g.id,
+    label: `${g.name} (${g.spellSlugs.length})`,
+  }))
+
+  const toggleMode = () => {
+    updateFilter(
+      "grimoireMode",
+      filters.grimoireMode === "exclude" ? "include-all" : "exclude"
+    )
+  }
+
+  return (
+    <div className="flex flex-wrap items-center gap-2 rounded-md border border-dashed px-3 py-2">
+      <span className="text-xs font-medium text-muted-foreground">
+        {t("grimoire.filter.label")} :
+      </span>
+      <MultiSelect
+        label={t("grimoire.filter.label")}
+        options={grimoireOptions}
+        selected={filters.grimoires}
+        onChange={(v) => updateFilter("grimoires", v)}
+      />
+      {filters.grimoires.length > 0 && (
+        <button
+          onClick={toggleMode}
+          className={`flex h-9 items-center gap-1.5 rounded-md border px-3 text-sm transition-colors hover:bg-accent ${
+            filters.grimoireMode === "exclude"
+              ? "border-orange-500/40 bg-orange-500/5 text-orange-700 dark:text-orange-300"
+              : "border-primary/50 bg-primary/5 text-primary"
+          }`}
+        >
+          {filters.grimoireMode === "exclude"
+            ? t("grimoire.filter.exclude")
+            : t("grimoire.filter.include")}
+        </button>
+      )}
+    </div>
   )
 }
 
@@ -131,6 +182,7 @@ export const SpellFilters = ({
         )}
         <ShareButton hasActiveFilters={hasActiveFilters} />
       </div>
+      <GrimoireFilterBar filters={filters} updateFilter={updateFilter} />
       <div className="flex items-center justify-between">
         <SearchInput
           value={filters.search}

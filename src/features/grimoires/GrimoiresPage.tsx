@@ -1,0 +1,144 @@
+import { useMemo, useState } from "react"
+import type { Spell } from "@/features/spells/data/types"
+import { buildSpellList } from "@/features/spells/data/spells"
+import { useLanguage } from "@/i18n/LanguageContext"
+import { useGrimoiresContext } from "./GrimoiresContext"
+import { GrimoireList } from "./components/GrimoireList"
+import { GrimoireDetail } from "./components/GrimoireDetail"
+import { SpellDetailSheet } from "@/features/spells/components/SpellDetailSheet"
+import { Button } from "@/components/ui/button"
+
+export const GrimoiresPage = () => {
+  const { lang } = useLanguage()
+  const { grimoires, createGrimoire, renameGrimoire, deleteGrimoire, removeSpell } =
+    useGrimoiresContext()
+
+  const spells = useMemo(() => buildSpellList(lang), [lang])
+  const spellsBySlug = useMemo(
+    () => new Map<string, Spell>(spells.map((s) => [s.slug, s])),
+    [spells]
+  )
+
+  const [selectedId, setSelectedId] = useState<string | null>(null)
+  const [selectedSpell, setSelectedSpell] = useState<Spell | null>(null)
+
+  const selectedGrimoire = grimoires.find((g) => g.id === selectedId) ?? null
+
+  // If the selected grimoire was deleted, clear the selection
+  const handleDelete = (id: string) => {
+    deleteGrimoire(id)
+    if (selectedId === id) setSelectedId(null)
+  }
+
+  const handleCreate = (name: string) => {
+    const created = createGrimoire(name)
+    setSelectedId(created.id)
+  }
+
+  if (grimoires.length === 0) {
+    return (
+      <EmptyState onCreate={handleCreate} />
+    )
+  }
+
+  return (
+    <div className="flex flex-col gap-4">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-[280px_1fr]">
+        {/* Left — grimoire list */}
+        <div className="flex flex-col gap-2">
+          <GrimoireList
+            grimoires={grimoires}
+            selectedId={selectedId}
+            onSelect={setSelectedId}
+            onCreate={handleCreate}
+            onRename={renameGrimoire}
+            onDelete={handleDelete}
+          />
+        </div>
+
+        {/* Right — grimoire detail */}
+        <GrimoireDetail
+          grimoire={selectedGrimoire}
+          spellsBySlug={spellsBySlug}
+          onRemoveSpell={removeSpell}
+          onSelectSpell={setSelectedSpell}
+        />
+      </div>
+
+      <SpellDetailSheet
+        spell={selectedSpell}
+        onClose={() => setSelectedSpell(null)}
+      />
+    </div>
+  )
+}
+
+const EmptyState = ({ onCreate }: { onCreate: (name: string) => void }) => {
+  const { t } = useLanguage()
+  const [isCreating, setIsCreating] = useState(false)
+  const [name, setName] = useState("")
+
+  const handleSubmit = () => {
+    const trimmed = name.trim()
+    if (trimmed) {
+      onCreate(trimmed)
+      setName("")
+      setIsCreating(false)
+    }
+  }
+
+  return (
+    <div className="flex flex-col items-center justify-center gap-4 py-20 text-center">
+      {/* Book icon */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="48"
+        height="48"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="text-muted-foreground/40"
+      >
+        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+      </svg>
+      <div>
+        <p className="font-medium">{t("grimoire.empty")}</p>
+        <p className="mt-1 text-sm text-muted-foreground">
+          {t("grimoire.empty.description")}
+        </p>
+      </div>
+
+      {isCreating ? (
+        <div className="flex w-full max-w-sm items-center gap-2">
+          <input
+            autoFocus
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") handleSubmit()
+              if (e.key === "Escape") setIsCreating(false)
+            }}
+            placeholder={t("grimoire.name.placeholder")}
+            className="min-w-0 flex-1 rounded border bg-background px-3 py-1.5 text-sm outline-none ring-1 ring-primary"
+          />
+          <Button size="sm" onClick={handleSubmit} disabled={!name.trim()}>
+            {t("grimoire.create")}
+          </Button>
+          <button
+            onClick={() => setIsCreating(false)}
+            className="text-xs text-muted-foreground hover:underline"
+          >
+            {t("grimoire.cancel")}
+          </button>
+        </div>
+      ) : (
+        <Button onClick={() => setIsCreating(true)}>
+          + {t("grimoire.new")}
+        </Button>
+      )}
+    </div>
+  )
+}

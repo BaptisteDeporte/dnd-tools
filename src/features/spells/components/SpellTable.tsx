@@ -67,7 +67,9 @@ export const SpellTable = ({ table, onSelectSpell }: SpellTableProps) => {
         {table.getRowModel().rows.map((row) => (
           <TableRow
             key={row.id}
-            className="cursor-pointer even:bg-muted/50 hover:!bg-muted"
+            className={`cursor-pointer even:bg-muted/50 hover:!bg-muted ${
+              row.getIsSelected() ? "!bg-primary/8 even:!bg-primary/8" : ""
+            }`}
             onClick={() => onSelectSpell(row.original)}
           >
             {row.getVisibleCells().map((cell) => (

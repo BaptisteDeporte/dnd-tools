@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react"
 import {
   type ColumnDef,
+  type RowSelectionState,
   type SortingState,
   getCoreRowModel,
   getFilteredRowModel,
@@ -10,6 +11,7 @@ import {
 import type { Spell, FilterState, School } from "../data/types"
 import { emptyFilters } from "../data/types"
 import { useLanguage } from "@/i18n/LanguageContext"
+import { useGrimoiresContext } from "@/features/grimoires/GrimoiresContext"
 import { parseRange, parseDuration } from "../data/parse"
 import { CellWithTooltip } from "../components/CellWithTooltip"
 import { readInitialFilters, useSyncFiltersToURL } from "./useFiltersSearchParams"
@@ -28,31 +30,70 @@ const matchesBoolFilter = (filter: boolean | null, value: boolean): boolean =>
 
 export const useSpellTable = (spells: Spell[]) => {
   const { t } = useLanguage()
+  const { grimoires } = useGrimoiresContext()
   const [filters, setFilters] = useState<FilterState>(readInitialFilters)
   useSyncFiltersToURL(filters)
   const [sorting, setSorting] = useState<SortingState>([
     { id: "level", desc: false },
   ])
+  const [rowSelection, setRowSelection] = useState<RowSelectionState>({})
 
-  const filteredSpells = useMemo(
-    () =>
-      spells.filter(
-        (spell) =>
-          matchesMultiSelect(filters.levels, spell.level) &&
-          matchesMultiSelect(filters.schools, spell.school) &&
-          matchesArrayAny(filters.classes, spell.classes) &&
-          matchesArrayAll(filters.components, spell.components) &&
-          matchesBoolFilter(filters.concentration, spell.concentration) &&
-          matchesBoolFilter(filters.ritual, spell.ritual) &&
-          matchesMultiSelect(filters.sources, spell.source) &&
-          (filters.search === "" ||
-            spell.name.toLowerCase().includes(filters.search.toLowerCase()))
-      ),
-    [spells, filters]
-  )
+  const filteredSpells = useMemo(() => {
+    const selectedGrimoires = grimoires.filter((g) =>
+      filters.grimoires.includes(g.id)
+    )
+
+    return spells.filter((spell) => {
+      if (!matchesMultiSelect(filters.levels, spell.level)) return false
+      if (!matchesMultiSelect(filters.schools, spell.school)) return false
+      if (!matchesArrayAny(filters.classes, spell.classes)) return false
+      if (!matchesArrayAll(filters.components, spell.components)) return false
+      if (!matchesBoolFilter(filters.concentration, spell.concentration)) return false
+      if (!matchesBoolFilter(filters.ritual, spell.ritual)) return false
+      if (!matchesMultiSelect(filters.sources, spell.source)) return false
+      if (filters.search !== "" && !spell.name.toLowerCase().includes(filters.search.toLowerCase())) return false
+
+      if (selectedGrimoires.length > 0) {
+        if (filters.grimoireMode === "exclude") {
+          // Exclude if the spell is in ANY selected grimoire
+          if (selectedGrimoires.some((g) => g.spellSlugs.includes(spell.slug))) return false
+        } else {
+          // Include only if the spell is in ALL selected grimoires
+          if (!selectedGrimoires.every((g) => g.spellSlugs.includes(spell.slug))) return false
+        }
+      }
+
+      return true
+    })
+  }, [spells, filters, grimoires])
 
   const columns = useMemo<ColumnDef<Spell>[]>(
     () => [
+      {
+        id: "select",
+        header: ({ table }) => (
+          <input
+            type="checkbox"
+            checked={table.getIsAllRowsSelected()}
+            ref={(el) => {
+              if (el) el.indeterminate = table.getIsSomeRowsSelected()
+            }}
+            onChange={table.getToggleAllRowsSelectedHandler()}
+            onClick={(e) => e.stopPropagation()}
+            className="rounded border-input"
+          />
+        ),
+        cell: ({ row }) => (
+          <input
+            type="checkbox"
+            checked={row.getIsSelected()}
+            onChange={row.getToggleSelectedHandler()}
+            onClick={(e) => e.stopPropagation()}
+            className="rounded border-input"
+          />
+        ),
+        enableSorting: false,
+      },
       {
         accessorKey: "name",
         header: () => t("column.name"),
@@ -152,8 +193,11 @@ export const useSpellTable = (spells: Spell[]) => {
   const table = useReactTable({
     data: filteredSpells,
     columns,
-    state: { sorting },
+    state: { sorting, rowSelection },
+    getRowId: (row) => row.slug,
     onSortingChange: setSorting,
+    onRowSelectionChange: setRowSelection,
+    enableRowSelection: true,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
@@ -174,7 +218,11 @@ export const useSpellTable = (spells: Spell[]) => {
     filters.concentration !== null ||
     filters.ritual !== null ||
     filters.sources.length > 0 ||
-    filters.search !== ""
+    filters.search !== "" ||
+    filters.grimoires.length > 0
+
+  const selectedSlugs = Object.keys(rowSelection).filter((k) => rowSelection[k])
+  const clearSelection = () => setRowSelection({})
 
   return {
     table,
@@ -184,5 +232,7 @@ export const useSpellTable = (spells: Spell[]) => {
     hasActiveFilters,
     filteredCount: filteredSpells.length,
     totalCount: spells.length,
+    selectedSlugs,
+    clearSelection,
   }
 }

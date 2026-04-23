@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef } from "react"
-import type { FilterState, School, DndClass, Component } from "../data/types"
+import type { FilterState, School, DndClass, Component, GrimoireFilterMode } from "../data/types"
 import { emptyFilters } from "../data/types"
 
 const SCHOOLS: School[] = [
@@ -28,6 +28,11 @@ const parseLevels = (raw: string | null): number[] => {
   return raw.split(",").map(Number).filter((n) => !isNaN(n) && n >= 0 && n <= 9)
 }
 
+const parseGrimoireMode = (raw: string | null): GrimoireFilterMode => {
+  if (raw === "include-all") return "include-all"
+  return "exclude"
+}
+
 export const filtersFromSearchParams = (params: URLSearchParams): FilterState => ({
   levels: parseLevels(params.get("levels")),
   schools: parseList(params.get("schools"), SCHOOLS),
@@ -37,6 +42,8 @@ export const filtersFromSearchParams = (params: URLSearchParams): FilterState =>
   ritual: parseBool(params.get("ritual")),
   sources: params.get("sources")?.split(",").filter(Boolean) ?? [],
   search: params.get("q") ?? "",
+  grimoires: params.get("grimoires")?.split(",").filter(Boolean) ?? [],
+  grimoireMode: parseGrimoireMode(params.get("grimoireMode")),
 })
 
 export const filtersToSearchParams = (filters: FilterState): URLSearchParams => {
@@ -49,6 +56,10 @@ export const filtersToSearchParams = (filters: FilterState): URLSearchParams => 
   if (filters.ritual !== null) params.set("ritual", filters.ritual ? "1" : "0")
   if (filters.sources.length > 0) params.set("sources", filters.sources.join(","))
   if (filters.search) params.set("q", filters.search)
+  if (filters.grimoires.length > 0) {
+    params.set("grimoires", filters.grimoires.join(","))
+    if (filters.grimoireMode !== "exclude") params.set("grimoireMode", filters.grimoireMode)
+  }
   return params
 }
 
@@ -60,7 +71,8 @@ const isEmptyFilters = (filters: FilterState): boolean =>
   filters.concentration === null &&
   filters.ritual === null &&
   filters.sources.length === 0 &&
-  filters.search === ""
+  filters.search === "" &&
+  filters.grimoires.length === 0
 
 export const readInitialFilters = (): FilterState => {
   const params = new URLSearchParams(window.location.search)
