@@ -2,6 +2,7 @@ import type { Spell, School, DndClass } from "../data/types"
 import { useLanguage } from "@/i18n/LanguageContext"
 import { useGrimoiresContext } from "@/features/grimoires/GrimoiresContext"
 import { Badge } from "@/components/ui/badge"
+import { DamageTypeBadge } from "./DamageTypeBadge"
 import {
   Sheet,
   SheetContent,
@@ -101,6 +102,16 @@ export const SpellDetailSheet = ({
                 </Badge>
               ))}
             </div>
+            {spell.damage_types.length > 0 && (
+              <div className="flex flex-wrap items-center gap-1.5 px-4">
+                <span className="text-xs font-medium text-muted-foreground">
+                  {t("filter.damageType")} :
+                </span>
+                {spell.damage_types.map((dt) => (
+                  <DamageTypeBadge key={dt} type={dt} />
+                ))}
+              </div>
+            )}
             <GrimoireInfo spell={spell} />
             {spell.description && (
               <div className="space-y-2 border-t px-4 pt-4">

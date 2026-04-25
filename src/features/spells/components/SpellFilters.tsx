@@ -1,5 +1,5 @@
 import { useState } from "react"
-import type { FilterState, School, DndClass, Component } from "../data/types"
+import type { FilterState, School, DndClass, Component, DamageType } from "../data/types"
 import { allSources } from "../data/spells"
 import { useLanguage } from "@/i18n/LanguageContext"
 import { useGrimoiresContext } from "@/features/grimoires/GrimoiresContext"
@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { MultiSelect } from "./MultiSelect"
 import { TriStateToggle } from "./TriStateToggle"
 import { SearchInput } from "./SearchInput"
+import { DamageTypeBadge } from "./DamageTypeBadge"
 
 const SCHOOLS: School[] = [
   "abjuration",
@@ -33,6 +34,10 @@ const CLASSES: DndClass[] = [
 
 const COMPONENTS: Component[] = ["V", "S", "M"]
 const LEVELS = Array.from({ length: 10 }, (_, i) => i)
+const DAMAGE_TYPES: DamageType[] = [
+  "acid", "bludgeoning", "cold", "fire", "force", "lightning",
+  "necrotic", "piercing", "poison", "psychic", "radiant", "slashing", "thunder",
+]
 
 interface SpellFiltersProps {
   filters: FilterState
@@ -174,6 +179,15 @@ export const SpellFilters = ({
           options={allSources.map((s) => ({ value: s, label: s }))}
           selected={filters.sources}
           onChange={(v) => updateFilter("sources", v)}
+        />
+        <MultiSelect
+          label={t("filter.damageType")}
+          options={DAMAGE_TYPES.map((d) => ({
+            value: d,
+            label: <DamageTypeBadge type={d} />,
+          }))}
+          selected={filters.damageTypes}
+          onChange={(v) => updateFilter("damageTypes", v)}
         />
         {hasActiveFilters && (
           <Button variant="outline" size="lg" onClick={clearFilters}>

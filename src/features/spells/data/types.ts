@@ -1,3 +1,18 @@
+export type DamageType =
+  | "acid"
+  | "bludgeoning"
+  | "cold"
+  | "fire"
+  | "force"
+  | "lightning"
+  | "necrotic"
+  | "piercing"
+  | "poison"
+  | "psychic"
+  | "radiant"
+  | "slashing"
+  | "thunder"
+
 export type School =
   | "abjuration"
   | "conjuration"
@@ -31,6 +46,7 @@ export interface SpellMechanics {
   ritual: boolean
   source: string
   classes: DndClass[]
+  damage_types: DamageType[]
 }
 
 export interface SpellI18n {
@@ -59,6 +75,7 @@ export interface FilterState {
   search: string
   grimoires: string[]
   grimoireMode: GrimoireFilterMode
+  damageTypes: DamageType[]
 }
 
 export const emptyFilters: FilterState = {
@@ -72,4 +89,5 @@ export const emptyFilters: FilterState = {
   search: "",
   grimoires: [],
   grimoireMode: "exclude",
+  damageTypes: [],
 }

@@ -3,7 +3,7 @@ import { useLanguage } from "@/i18n/LanguageContext"
 
 interface MultiSelectProps<T extends string | number> {
   label: string
-  options: { value: T; label: string }[]
+  options: { value: T; label: React.ReactNode }[]
   selected: T[]
   onChange: (selected: T[]) => void
 }

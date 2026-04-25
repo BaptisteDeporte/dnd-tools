@@ -15,7 +15,8 @@
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "aid": {
     "level": 2,
@@ -34,7 +35,8 @@
       "Druid",
       "Paladin",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "alarm": {
     "level": 1,
@@ -50,7 +52,8 @@
     "classes": [
       "Ranger",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "befuddlement": {
     "level": 8,
@@ -68,6 +71,9 @@
       "Druid",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "planar-ally": {
@@ -82,7 +88,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "enhance-ability": {
     "level": 2,
@@ -102,7 +109,8 @@
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "friends": {
     "level": 0,
@@ -119,7 +127,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "animal-friendship": {
     "level": 1,
@@ -136,7 +145,8 @@
       "Bard",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "animate-dead": {
     "level": 3,
@@ -152,7 +162,8 @@
     "classes": [
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "animate-objects": {
     "level": 5,
@@ -168,6 +179,9 @@
       "Bard",
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "bludgeoning"
     ]
   },
   "nondetection": {
@@ -185,7 +199,8 @@
       "Bard",
       "Ranger",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "calm-emotions": {
     "level": 2,
@@ -200,7 +215,8 @@
     "classes": [
       "Bard",
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "seeming": {
     "level": 5,
@@ -216,7 +232,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "find-steed": {
     "level": 2,
@@ -230,7 +247,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "find-familiar": {
     "level": 1,
@@ -245,7 +263,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "call-lightning": {
     "level": 3,
@@ -259,6 +278,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Druid"
+    ],
+    "damage_types": [
+      "lightning"
     ]
   },
   "elemental-weapon": {
@@ -275,6 +297,13 @@
       "Druid",
       "Paladin",
       "Ranger"
+    ],
+    "damage_types": [
+      "acid",
+      "cold",
+      "fire",
+      "lightning",
+      "thunder"
     ]
   },
   "magic-weapon": {
@@ -292,7 +321,8 @@
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "spiritual-weapon": {
     "level": 2,
@@ -306,6 +336,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "armor-of-agathys": {
@@ -321,6 +354,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Warlock"
+    ],
+    "damage_types": [
+      "cold"
     ]
   },
   "mage-armor": {
@@ -337,7 +373,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "death-armor": {
     "level": 2,
@@ -353,7 +390,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "time-stop": {
     "level": 9,
@@ -367,7 +405,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "acid-splash": {
     "level": 0,
@@ -382,6 +421,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "acid"
     ]
   },
   "phantasmal-killer": {
@@ -397,6 +439,9 @@
     "classes": [
       "Bard",
       "Wizard"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "guidance": {
@@ -412,7 +457,8 @@
     "classes": [
       "Cleric",
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "augury": {
     "level": 2,
@@ -429,7 +475,8 @@
       "Cleric",
       "Druid",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "aura-of-purity": {
     "level": 4,
@@ -443,7 +490,8 @@
     "classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "aura-of-life": {
     "level": 4,
@@ -457,7 +505,8 @@
     "classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "aura-of-vitality": {
     "level": 3,
@@ -472,7 +521,8 @@
       "Cleric",
       "Druid",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "crusader-s-mantle": {
     "level": 3,
@@ -485,6 +535,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Paladin"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "nystul-s-magic-aura": {
@@ -500,7 +553,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "holy-aura": {
     "level": 8,
@@ -515,7 +569,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "antipathy-sympathy": {
     "level": 8,
@@ -532,7 +587,8 @@
       "Bard",
       "Druid",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "glibness": {
     "level": 8,
@@ -546,7 +602,8 @@
     "classes": [
       "Bard",
       "Warlock"
-    ]
+    ],
+    "damage_types": []
   },
   "goodberry": {
     "level": 1,
@@ -562,7 +619,8 @@
     "classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "banishment": {
     "level": 4,
@@ -581,7 +639,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "blade-barrier": {
     "level": 6,
@@ -595,6 +654,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "bless": {
@@ -611,7 +673,8 @@
     "classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "inflict-wounds": {
     "level": 1,
@@ -625,6 +688,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
+    ],
+    "damage_types": [
+      "necrotic"
     ]
   },
   "magic-mouth": {
@@ -641,7 +707,8 @@
     "classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "shield": {
     "level": 1,
@@ -656,7 +723,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "cacophonic-shield": {
     "level": 3,
@@ -672,7 +740,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "fire-shield": {
     "level": 4,
@@ -689,6 +758,10 @@
       "Druid",
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "cold",
+      "fire"
     ]
   },
   "shield-of-faith": {
@@ -705,7 +778,8 @@
     "classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "poison-spray": {
     "level": 0,
@@ -722,6 +796,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "poison"
     ]
   },
   "fireball": {
@@ -738,6 +815,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "fire"
     ]
   },
   "delayed-blast-fireball": {
@@ -754,6 +834,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "fire"
     ]
   },
   "gust-of-wind": {
@@ -772,7 +855,8 @@
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "cloudkill": {
     "level": 5,
@@ -787,6 +871,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "poison"
     ]
   },
   "forcecage": {
@@ -804,7 +891,8 @@
       "Bard",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "vampiric-touch": {
     "level": 3,
@@ -820,6 +908,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "necrotic"
     ]
   },
   "blindness-deafness": {
@@ -836,7 +927,8 @@
       "Cleric",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "circle-of-death": {
     "level": 6,
@@ -853,6 +945,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "necrotic"
     ]
   },
   "circle-of-power": {
@@ -868,7 +963,8 @@
       "Cleric",
       "Paladin",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "teleportation-circle": {
     "level": 5,
@@ -885,7 +981,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "magic-circle": {
     "level": 3,
@@ -903,7 +1000,8 @@
       "Paladin",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "chain-lightning": {
     "level": 6,
@@ -919,6 +1017,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "lightning"
     ]
   },
   "antimagic-field": {
@@ -935,7 +1036,8 @@
     "classes": [
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "shapechange": {
     "level": 9,
@@ -951,7 +1053,8 @@
     "classes": [
       "Druid",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "plane-shift": {
     "level": 7,
@@ -970,7 +1073,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "dirge": {
     "level": 6,
@@ -984,7 +1088,8 @@
     "classes": [
       "Bard",
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "charm-monster": {
     "level": 4,
@@ -1002,7 +1107,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "charm-person": {
     "level": 1,
@@ -1020,7 +1126,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "blinding-smite": {
     "level": 3,
@@ -1033,6 +1140,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Paladin"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "wrathful-smite": {
@@ -1046,6 +1156,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Paladin"
+    ],
+    "damage_types": [
+      "necrotic"
     ]
   },
   "searing-smite": {
@@ -1059,6 +1172,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Paladin"
+    ],
+    "damage_types": [
+      "fire"
     ]
   },
   "shining-smite": {
@@ -1072,6 +1188,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Paladin"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "staggering-smite": {
@@ -1085,6 +1204,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Paladin"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "thunderous-smite": {
@@ -1098,6 +1220,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Paladin"
+    ],
+    "damage_types": [
+      "thunder"
     ]
   },
   "divine-smite": {
@@ -1111,6 +1236,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Paladin"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "banishing-smite": {
@@ -1124,6 +1252,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Paladin"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "tasha-s-bubbling-cauldron": {
@@ -1140,7 +1271,8 @@
     "classes": [
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "mordenkainen-s-faithful-hound": {
     "level": 4,
@@ -1155,6 +1287,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "clairvoyance": {
@@ -1173,7 +1308,8 @@
       "Cleric",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "blink": {
     "level": 3,
@@ -1188,7 +1324,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "clone": {
     "level": 8,
@@ -1203,7 +1340,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "leomund-s-secret-chest": {
     "level": 4,
@@ -1218,7 +1356,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "flame-strike": {
     "level": 5,
@@ -1233,6 +1372,10 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
+    ],
+    "damage_types": [
+      "fire",
+      "radiant"
     ]
   },
   "sending": {
@@ -1250,7 +1393,8 @@
       "Bard",
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "speak-with-animals": {
     "level": 1,
@@ -1267,7 +1411,8 @@
       "Druid",
       "Ranger",
       "Warlock"
-    ]
+    ],
+    "damage_types": []
   },
   "speak-with-dead": {
     "level": 3,
@@ -1284,7 +1429,8 @@
       "Bard",
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "speak-with-plants": {
     "level": 3,
@@ -1300,7 +1446,8 @@
       "Bard",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "commune": {
     "level": 5,
@@ -1315,7 +1462,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "commune-with-nature": {
     "level": 5,
@@ -1330,7 +1478,8 @@
     "classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "comprehend-languages": {
     "level": 1,
@@ -1348,7 +1497,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "compulsion": {
     "level": 4,
@@ -1362,7 +1512,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Bard"
-    ]
+    ],
+    "damage_types": []
   },
   "cone-of-cold": {
     "level": 5,
@@ -1379,6 +1530,9 @@
       "Druid",
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "cold"
     ]
   },
   "confusion": {
@@ -1397,7 +1551,8 @@
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "contact-other-plane": {
     "level": 5,
@@ -1411,6 +1566,9 @@
     "classes": [
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "chill-touch": {
@@ -1427,6 +1585,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "necrotic"
     ]
   },
   "contagion": {
@@ -1442,6 +1603,9 @@
     "classes": [
       "Cleric",
       "Druid"
+    ],
+    "damage_types": [
+      "necrotic"
     ]
   },
   "harm": {
@@ -1456,6 +1620,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
+    ],
+    "damage_types": [
+      "necrotic"
     ]
   },
   "backlash": {
@@ -1472,7 +1639,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "counterspell": {
     "level": 3,
@@ -1487,7 +1655,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "control-water": {
     "level": 4,
@@ -1504,6 +1673,9 @@
       "Cleric",
       "Druid",
       "Wizard"
+    ],
+    "damage_types": [
+      "bludgeoning"
     ]
   },
   "control-weather": {
@@ -1521,7 +1693,8 @@
       "Cleric",
       "Druid",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "summon-aberration": {
     "level": 4,
@@ -1537,7 +1710,8 @@
     "classes": [
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "summon-construct": {
     "level": 4,
@@ -1552,7 +1726,8 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "summon-elemental": {
     "level": 4,
@@ -1569,7 +1744,8 @@
       "Druid",
       "Ranger",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "summon-beast": {
     "level": 2,
@@ -1585,7 +1761,8 @@
     "classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "summon-celestial": {
     "level": 5,
@@ -1601,7 +1778,8 @@
     "classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "summon-dragon": {
     "level": 5,
@@ -1616,7 +1794,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "summon-fey": {
     "level": 3,
@@ -1634,7 +1813,8 @@
       "Ranger",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "summon-fiend": {
     "level": 6,
@@ -1650,7 +1830,8 @@
     "classes": [
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "summon-undead": {
     "level": 3,
@@ -1666,7 +1847,8 @@
     "classes": [
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "drawmij-s-instant-summons": {
     "level": 6,
@@ -1681,7 +1863,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "antilife-shell": {
     "level": 5,
@@ -1695,7 +1878,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "rope-trick": {
     "level": 2,
@@ -1710,7 +1894,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "cordon-of-arrows": {
     "level": 2,
@@ -1725,6 +1910,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Ranger"
+    ],
+    "damage_types": [
+      "piercing"
     ]
   },
   "color-spray": {
@@ -1742,7 +1930,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "true-strike": {
     "level": 0,
@@ -1759,6 +1948,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "thunderclap": {
@@ -1776,6 +1968,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "thunder"
     ]
   },
   "crown-of-madness": {
@@ -1793,7 +1988,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "ice-knife": {
     "level": 1,
@@ -1809,6 +2005,10 @@
       "Druid",
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "cold",
+      "piercing"
     ]
   },
   "creation": {
@@ -1825,7 +2025,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "create-undead": {
     "level": 6,
@@ -1842,7 +2043,8 @@
       "Cleric",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "create-food-and-water": {
     "level": 3,
@@ -1857,7 +2059,8 @@
     "classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "create-or-destroy-water": {
     "level": 1,
@@ -1873,7 +2076,8 @@
     "classes": [
       "Cleric",
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "spike-growth": {
     "level": 2,
@@ -1889,6 +2093,9 @@
     "classes": [
       "Druid",
       "Ranger"
+    ],
+    "damage_types": [
+      "piercing"
     ]
   },
   "plant-growth": {
@@ -1905,7 +2112,8 @@
       "Bard",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "shillelagh": {
     "level": 0,
@@ -1920,6 +2128,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Druid"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "otto-s-irresistible-dance": {
@@ -1934,7 +2145,8 @@
     "classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "knock": {
     "level": 2,
@@ -1949,7 +2161,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "eldritch-blast": {
     "level": 0,
@@ -1963,6 +2176,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Warlock"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "maze": {
@@ -1977,7 +2193,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "disguise-self": {
     "level": 1,
@@ -1993,7 +2210,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "remove-curse": {
     "level": 3,
@@ -2010,7 +2228,8 @@
       "Paladin",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "demiplane": {
     "level": 8,
@@ -2025,7 +2244,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "disintegrate": {
     "level": 6,
@@ -2041,6 +2261,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "see-invisibility": {
@@ -2058,7 +2281,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "detect-magic": {
     "level": 1,
@@ -2079,7 +2303,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "detect-thoughts": {
     "level": 2,
@@ -2096,7 +2321,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "find-traps": {
     "level": 2,
@@ -2112,7 +2338,8 @@
       "Cleric",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "detect-evil-and-good": {
     "level": 1,
@@ -2127,7 +2354,8 @@
     "classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "detect-poison-and-disease": {
     "level": 1,
@@ -2145,7 +2373,8 @@
       "Druid",
       "Paladin",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "enthrall": {
     "level": 2,
@@ -2160,7 +2389,8 @@
     "classes": [
       "Bard",
       "Warlock"
-    ]
+    ],
+    "damage_types": []
   },
   "tenser-s-floating-disk": {
     "level": 1,
@@ -2175,7 +2405,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "sequester": {
     "level": 7,
@@ -2190,7 +2421,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "dispel-magic": {
     "level": 3,
@@ -2211,7 +2443,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "dispel-evil-and-good": {
     "level": 5,
@@ -2227,7 +2460,8 @@
     "classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "divination": {
     "level": 4,
@@ -2244,7 +2478,8 @@
       "Cleric",
       "Druid",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "finger-of-death": {
     "level": 7,
@@ -2260,6 +2495,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "necrotic"
     ]
   },
   "dominate-beast": {
@@ -2276,7 +2514,8 @@
       "Druid",
       "Ranger",
       "Sorcerer"
-    ]
+    ],
+    "damage_types": []
   },
   "dominate-monster": {
     "level": 8,
@@ -2293,7 +2532,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "dominate-person": {
     "level": 5,
@@ -2309,7 +2549,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "tongues": {
     "level": 3,
@@ -2327,7 +2568,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "mislead": {
     "level": 5,
@@ -2342,7 +2584,8 @@
       "Bard",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "gentle-repose": {
     "level": 2,
@@ -2359,7 +2602,8 @@
       "Cleric",
       "Paladin",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "druidcraft": {
     "level": 0,
@@ -2373,7 +2617,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "compelled-duel": {
     "level": 1,
@@ -2386,7 +2631,8 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "wardaway": {
     "level": 1,
@@ -2404,7 +2650,8 @@
       "Cleric",
       "Paladin",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "lightning-bolt": {
     "level": 3,
@@ -2420,6 +2667,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "lightning"
     ]
   },
   "sunburst": {
@@ -2438,6 +2688,9 @@
       "Druid",
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "elementalism": {
@@ -2454,7 +2707,8 @@
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "prismatic-spray": {
     "level": 7,
@@ -2470,6 +2724,13 @@
       "Bard",
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "acid",
+      "cold",
+      "fire",
+      "lightning",
+      "poison"
     ]
   },
   "imprisonment": {
@@ -2486,7 +2747,8 @@
     "classes": [
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "entangle": {
     "level": 1,
@@ -2501,7 +2763,8 @@
     "classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "weird": {
     "level": 9,
@@ -2516,6 +2779,9 @@
     "classes": [
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "planar-binding": {
@@ -2535,7 +2801,8 @@
       "Druid",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "mordenkainen-s-sword": {
     "level": 7,
@@ -2551,6 +2818,9 @@
     "classes": [
       "Bard",
       "Wizard"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "mind-spike": {
@@ -2566,6 +2836,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "sorcerous-burst": {
@@ -2580,6 +2853,15 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Sorcerer"
+    ],
+    "damage_types": [
+      "acid",
+      "cold",
+      "fire",
+      "lightning",
+      "poison",
+      "psychic",
+      "thunder"
     ]
   },
   "mind-blank": {
@@ -2595,7 +2877,8 @@
     "classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "spirit-guardians": {
     "level": 3,
@@ -2610,6 +2893,10 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
+    ],
+    "damage_types": [
+      "necrotic",
+      "radiant"
     ]
   },
   "elminster-s-elusion": {
@@ -2624,7 +2911,8 @@
     "source": "Forgotten Realms: Heroes of Faerûn",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "feign-death": {
     "level": 3,
@@ -2642,7 +2930,8 @@
       "Cleric",
       "Druid",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "holy-star-of-mystra": {
     "level": 8,
@@ -2657,7 +2946,8 @@
     "classes": [
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "awaken": {
     "level": 5,
@@ -2673,7 +2963,8 @@
     "classes": [
       "Bard",
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "fabricate": {
     "level": 4,
@@ -2687,7 +2978,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "stone-shape": {
     "level": 4,
@@ -2704,7 +2996,8 @@
       "Cleric",
       "Druid",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "divine-favor": {
     "level": 1,
@@ -2718,6 +3011,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Paladin"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "heroes-feast": {
@@ -2735,7 +3031,8 @@
       "Bard",
       "Cleric",
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "feather-fall": {
     "level": 1,
@@ -2751,7 +3048,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "continual-flame": {
     "level": 2,
@@ -2768,7 +3066,8 @@
       "Cleric",
       "Druid",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "sacred-flame": {
     "level": 0,
@@ -2782,6 +3081,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "produce-flame": {
@@ -2796,6 +3098,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Druid"
+    ],
+    "damage_types": [
+      "fire"
     ]
   },
   "insect-plague": {
@@ -2813,6 +3118,9 @@
       "Cleric",
       "Druid",
       "Sorcerer"
+    ],
+    "damage_types": [
+      "piercing"
     ]
   },
   "melf-s-acid-arrow": {
@@ -2828,6 +3136,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
+    ],
+    "damage_types": [
+      "acid"
     ]
   },
   "lightning-arrow": {
@@ -2842,6 +3153,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Ranger"
+    ],
+    "damage_types": [
+      "lightning"
     ]
   },
   "blight": {
@@ -2859,6 +3173,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "necrotic"
     ]
   },
   "blur": {
@@ -2873,7 +3190,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "fount-of-moonlight": {
     "level": 4,
@@ -2888,6 +3206,9 @@
     "classes": [
       "Bard",
       "Druid"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "phantasmal-force": {
@@ -2905,6 +3226,9 @@
       "Bard",
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "etherealness": {
@@ -2923,6 +3247,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "gaseous-form": {
@@ -2940,7 +3267,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "tasha-s-hideous-laughter": {
     "level": 1,
@@ -2957,7 +3285,8 @@
       "Bard",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "thorn-whip": {
     "level": 0,
@@ -2972,6 +3301,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Druid"
+    ],
+    "damage_types": [
+      "piercing"
     ]
   },
   "misty-step": {
@@ -2987,7 +3319,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "shatter": {
     "level": 2,
@@ -3004,6 +3337,9 @@
       "Bard",
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "thunder"
     ]
   },
   "steel-wind-strike": {
@@ -3019,6 +3355,9 @@
     "classes": [
       "Ranger",
       "Wizard"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "ensnaring-strike": {
@@ -3032,6 +3371,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Ranger"
+    ],
+    "damage_types": [
+      "piercing"
     ]
   },
   "meld-into-stone": {
@@ -3048,6 +3390,9 @@
       "Cleric",
       "Druid",
       "Ranger"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "guardian-of-faith": {
@@ -3061,6 +3406,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "toll-the-dead": {
@@ -3077,6 +3425,9 @@
       "Cleric",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "necrotic"
     ]
   },
   "move-earth": {
@@ -3094,7 +3445,8 @@
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "globe-of-invulnerability": {
     "level": 6,
@@ -3110,7 +3462,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "glyph-of-warding": {
     "level": 3,
@@ -3127,6 +3480,13 @@
       "Bard",
       "Cleric",
       "Wizard"
+    ],
+    "damage_types": [
+      "acid",
+      "cold",
+      "fire",
+      "lightning",
+      "thunder"
     ]
   },
   "grease": {
@@ -3143,7 +3503,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "longstrider": {
     "level": 1,
@@ -3161,7 +3522,8 @@
       "Druid",
       "Ranger",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "hail-of-thorns": {
     "level": 1,
@@ -3174,6 +3536,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Ranger"
+    ],
+    "damage_types": [
+      "piercing"
     ]
   },
   "heal": {
@@ -3189,7 +3554,8 @@
     "classes": [
       "Cleric",
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "mass-heal": {
     "level": 9,
@@ -3203,7 +3569,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "haste": {
     "level": 3,
@@ -3219,7 +3586,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "heroism": {
     "level": 1,
@@ -3234,7 +3602,8 @@
     "classes": [
       "Bard",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "deryan-s-helpful-homunculi": {
     "level": 2,
@@ -3250,7 +3619,8 @@
     "classes": [
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "identify": {
     "level": 1,
@@ -3266,7 +3636,8 @@
     "classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "minor-illusion": {
     "level": 0,
@@ -3283,7 +3654,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "programmed-illusion": {
     "level": 6,
@@ -3299,7 +3671,8 @@
     "classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "major-image": {
     "level": 3,
@@ -3317,7 +3690,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "mirror-image": {
     "level": 2,
@@ -3334,7 +3708,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "project-image": {
     "level": 7,
@@ -3350,7 +3725,8 @@
     "classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "silent-image": {
     "level": 1,
@@ -3367,7 +3743,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "hold-monster": {
     "level": 5,
@@ -3385,7 +3762,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "hold-person": {
     "level": 2,
@@ -3405,7 +3783,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "bane": {
     "level": 1,
@@ -3422,7 +3801,8 @@
       "Bard",
       "Cleric",
       "Warlock"
-    ]
+    ],
+    "damage_types": []
   },
   "songal-s-elemental-suffusion": {
     "level": 5,
@@ -3439,7 +3819,8 @@
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "command": {
     "level": 1,
@@ -3454,7 +3835,8 @@
       "Bard",
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "giant-insect": {
     "level": 4,
@@ -3468,7 +3850,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "forbiddance": {
     "level": 6,
@@ -3483,6 +3866,10 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
+    ],
+    "damage_types": [
+      "necrotic",
+      "radiant"
     ]
   },
   "reverse-gravity": {
@@ -3500,7 +3887,8 @@
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "invisibility": {
     "level": 2,
@@ -3518,7 +3906,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "greater-invisibility": {
     "level": 4,
@@ -3534,7 +3923,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "conjure-animals": {
     "level": 3,
@@ -3549,6 +3939,9 @@
     "classes": [
       "Druid",
       "Ranger"
+    ],
+    "damage_types": [
+      "slashing"
     ]
   },
   "conjure-constructs": {
@@ -3564,7 +3957,8 @@
     "source": "Forgotten Realms: Heroes of Faerûn",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "conjure-elemental": {
     "level": 5,
@@ -3579,6 +3973,12 @@
     "classes": [
       "Druid",
       "Wizard"
+    ],
+    "damage_types": [
+      "cold",
+      "fire",
+      "lightning",
+      "thunder"
     ]
   },
   "conjure-minor-elementals": {
@@ -3594,6 +3994,12 @@
     "classes": [
       "Druid",
       "Wizard"
+    ],
+    "damage_types": [
+      "acid",
+      "cold",
+      "fire",
+      "lightning"
     ]
   },
   "conjure-woodland-beings": {
@@ -3609,6 +4015,9 @@
     "classes": [
       "Druid",
       "Ranger"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "conjure-celestial": {
@@ -3623,6 +4032,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "conjure-fey": {
@@ -3637,6 +4049,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Druid"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "conjure-barrage": {
@@ -3652,6 +4067,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Ranger"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "conjure-volley": {
@@ -3667,6 +4085,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Ranger"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "blade-of-disaster": {
@@ -3683,7 +4104,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "flame-blade": {
     "level": 2,
@@ -3699,6 +4121,9 @@
     "classes": [
       "Druid",
       "Sorcerer"
+    ],
+    "damage_types": [
+      "fire"
     ]
   },
   "laeral-s-silver-lance": {
@@ -3716,7 +4141,8 @@
       "Cleric",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "slow": {
     "level": 3,
@@ -3733,7 +4159,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "levitate": {
     "level": 2,
@@ -3749,7 +4176,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "grasping-vine": {
     "level": 4,
@@ -3764,6 +4192,9 @@
     "classes": [
       "Druid",
       "Ranger"
+    ],
+    "damage_types": [
+      "bludgeoning"
     ]
   },
   "freedom-of-movement": {
@@ -3782,7 +4213,8 @@
       "Cleric",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "warding-bond": {
     "level": 2,
@@ -3798,7 +4230,8 @@
     "classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "rary-s-telepathic-bond": {
     "level": 5,
@@ -3814,7 +4247,8 @@
     "classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "locate-animals-or-plants": {
     "level": 2,
@@ -3831,7 +4265,8 @@
       "Bard",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "locate-object": {
     "level": 2,
@@ -3851,7 +4286,8 @@
       "Paladin",
       "Ranger",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "locate-creature": {
     "level": 4,
@@ -3871,7 +4307,8 @@
       "Paladin",
       "Ranger",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "beacon-of-hope": {
     "level": 3,
@@ -3885,7 +4322,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "spellfire-flare": {
     "level": 1,
@@ -3900,7 +4338,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "faerie-fire": {
     "level": 1,
@@ -3914,7 +4353,8 @@
     "classes": [
       "Bard",
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "light": {
     "level": 0,
@@ -3931,7 +4371,8 @@
       "Cleric",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "daylight": {
     "level": 3,
@@ -3949,7 +4390,8 @@
       "Paladin",
       "Ranger",
       "Sorcerer"
-    ]
+    ],
+    "damage_types": []
   },
   "dancing-lights": {
     "level": 0,
@@ -3966,7 +4408,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "bigby-s-hand": {
     "level": 5,
@@ -3982,6 +4425,10 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "bludgeoning",
+      "force"
     ]
   },
   "mage-hand": {
@@ -3999,7 +4446,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "burning-hands": {
     "level": 1,
@@ -4014,6 +4462,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "fire"
     ]
   },
   "bestow-curse": {
@@ -4030,6 +4481,9 @@
       "Bard",
       "Cleric",
       "Wizard"
+    ],
+    "damage_types": [
+      "necrotic"
     ]
   },
   "hex": {
@@ -4045,6 +4499,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Warlock"
+    ],
+    "damage_types": [
+      "necrotic"
     ]
   },
   "mordenkainen-s-magnificent-mansion": {
@@ -4061,7 +4518,8 @@
     "classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "alustriel-s-mooncloak": {
     "level": 5,
@@ -4079,7 +4537,8 @@
       "Druid",
       "Ranger",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "water-walk": {
     "level": 3,
@@ -4097,7 +4556,8 @@
       "Druid",
       "Ranger",
       "Sorcerer"
-    ]
+    ],
+    "damage_types": []
   },
   "doomtide": {
     "level": 4,
@@ -4114,7 +4574,8 @@
       "Bard",
       "Cleric",
       "Warlock"
-    ]
+    ],
+    "damage_types": []
   },
   "hunter-s-mark": {
     "level": 1,
@@ -4127,6 +4588,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Ranger"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "eyebite": {
@@ -4144,7 +4608,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "message": {
     "level": 0,
@@ -4161,7 +4626,8 @@
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "animal-messenger": {
     "level": 2,
@@ -4178,7 +4644,8 @@
       "Bard",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "heat-metal": {
     "level": 2,
@@ -4194,6 +4661,9 @@
     "classes": [
       "Bard",
       "Druid"
+    ],
+    "damage_types": [
+      "fire"
     ]
   },
   "polymorph": {
@@ -4212,7 +4682,8 @@
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "animal-shapes": {
     "level": 8,
@@ -4226,7 +4697,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "true-polymorph": {
     "level": 9,
@@ -4243,7 +4715,8 @@
       "Bard",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "mirage-arcane": {
     "level": 7,
@@ -4259,7 +4732,8 @@
       "Bard",
       "Druid",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "alter-self": {
     "level": 2,
@@ -4274,6 +4748,11 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "bludgeoning",
+      "piercing",
+      "slashing"
     ]
   },
   "modify-memory": {
@@ -4289,7 +4768,8 @@
     "classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "phantom-steed": {
     "level": 3,
@@ -4303,7 +4783,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "vicious-mockery": {
     "level": 0,
@@ -4316,6 +4797,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Bard"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "healing-word": {
@@ -4331,7 +4815,8 @@
       "Bard",
       "Cleric",
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "mass-healing-word": {
     "level": 3,
@@ -4345,7 +4830,8 @@
     "classes": [
       "Bard",
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "power-word-stun": {
     "level": 8,
@@ -4361,7 +4847,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "power-word-fortify": {
     "level": 7,
@@ -4375,7 +4862,8 @@
     "classes": [
       "Bard",
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "power-word-heal": {
     "level": 9,
@@ -4389,7 +4877,8 @@
     "classes": [
       "Bard",
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "power-word-kill": {
     "level": 9,
@@ -4405,6 +4894,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "word-of-radiance": {
@@ -4419,6 +4911,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Cleric"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "word-of-recall": {
@@ -4432,7 +4927,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "hypnotic-pattern": {
     "level": 3,
@@ -4449,7 +4945,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "wall-of-thorns": {
     "level": 6,
@@ -4464,6 +4961,10 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Druid"
+    ],
+    "damage_types": [
+      "piercing",
+      "slashing"
     ]
   },
   "wall-of-fire": {
@@ -4481,6 +4982,9 @@
       "Druid",
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "fire"
     ]
   },
   "wall-of-force": {
@@ -4496,7 +5000,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "wall-of-ice": {
     "level": 6,
@@ -4511,6 +5016,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
+    ],
+    "damage_types": [
+      "cold"
     ]
   },
   "wall-of-stone": {
@@ -4528,7 +5036,8 @@
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "wind-wall": {
     "level": 3,
@@ -4544,6 +5053,9 @@
     "classes": [
       "Druid",
       "Ranger"
+    ],
+    "damage_types": [
+      "bludgeoning"
     ]
   },
   "prismatic-wall": {
@@ -4559,6 +5071,13 @@
     "classes": [
       "Bard",
       "Wizard"
+    ],
+    "damage_types": [
+      "acid",
+      "cold",
+      "fire",
+      "lightning",
+      "poison"
     ]
   },
   "dissonant-whispers": {
@@ -4572,6 +5091,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Bard"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "legend-lore": {
@@ -4589,7 +5111,8 @@
       "Bard",
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "fog-cloud": {
     "level": 1,
@@ -4606,7 +5129,8 @@
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "incendiary-cloud": {
     "level": 8,
@@ -4622,6 +5146,9 @@
       "Druid",
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "fire"
     ]
   },
   "stinking-cloud": {
@@ -4639,7 +5166,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "cloud-of-daggers": {
     "level": 2,
@@ -4657,6 +5185,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "slashing"
     ]
   },
   "meteor-swarm": {
@@ -4672,6 +5203,10 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "bludgeoning",
+      "fire"
     ]
   },
   "arcane-eye": {
@@ -4687,7 +5222,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "chromatic-orb": {
     "level": 1,
@@ -4703,6 +5239,14 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "acid",
+      "cold",
+      "fire",
+      "lightning",
+      "poison",
+      "thunder"
     ]
   },
   "find-the-path": {
@@ -4720,7 +5264,8 @@
       "Bard",
       "Cleric",
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "divine-word": {
     "level": 7,
@@ -4733,7 +5278,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "tree-stride": {
     "level": 5,
@@ -4748,7 +5294,8 @@
     "classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "pass-without-trace": {
     "level": 2,
@@ -4764,7 +5311,8 @@
     "classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "passwall": {
     "level": 5,
@@ -4779,7 +5327,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "spider-climb": {
     "level": 2,
@@ -4796,7 +5345,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "barkskin": {
     "level": 2,
@@ -4812,7 +5362,8 @@
     "classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "stoneskin": {
     "level": 4,
@@ -4830,7 +5381,8 @@
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "beast-sense": {
     "level": 2,
@@ -4844,7 +5396,8 @@
     "classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "synaptic-static": {
     "level": 5,
@@ -4861,6 +5414,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "leomund-s-tiny-hut": {
@@ -4877,7 +5433,8 @@
     "classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "flesh-to-stone": {
     "level": 6,
@@ -4894,7 +5451,8 @@
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "fear": {
     "level": 3,
@@ -4912,7 +5470,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "mind-sliver": {
     "level": 0,
@@ -4927,6 +5486,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "shocking-grasp": {
@@ -4942,6 +5504,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "lightning"
     ]
   },
   "gate": {
@@ -4960,7 +5525,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "arcane-gate": {
     "level": 6,
@@ -4976,7 +5542,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "dimension-door": {
     "level": 4,
@@ -4992,6 +5559,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "starry-wisp": {
@@ -5007,6 +5577,9 @@
     "classes": [
       "Bard",
       "Druid"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "contingency": {
@@ -5022,7 +5595,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "foresight": {
     "level": 9,
@@ -5040,7 +5614,8 @@
       "Druid",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "yolande-s-regal-presence": {
     "level": 5,
@@ -5056,6 +5631,9 @@
     "classes": [
       "Bard",
       "Wizard"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "prestidigitation": {
@@ -5073,7 +5651,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "prayer-of-healing": {
     "level": 2,
@@ -5087,7 +5666,8 @@
     "classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "magic-missile": {
     "level": 1,
@@ -5102,6 +5682,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "astral-projection": {
@@ -5119,7 +5702,8 @@
       "Cleric",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "protection-from-energy": {
     "level": 3,
@@ -5137,7 +5721,8 @@
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "death-ward": {
     "level": 4,
@@ -5152,7 +5737,8 @@
     "classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "protection-from-evil-and-good": {
     "level": 1,
@@ -5171,7 +5757,8 @@
       "Paladin",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "protection-from-poison": {
     "level": 2,
@@ -5188,7 +5775,8 @@
       "Druid",
       "Paladin",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "guards-and-wards": {
     "level": 6,
@@ -5204,7 +5792,8 @@
     "classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "purify-food-and-drink": {
     "level": 1,
@@ -5220,7 +5809,8 @@
       "Cleric",
       "Druid",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "geas": {
     "level": 5,
@@ -5237,6 +5827,9 @@
       "Druid",
       "Paladin",
       "Wizard"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "raise-dead": {
@@ -5254,7 +5847,8 @@
       "Bard",
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   },
   "ray-of-enfeeblement": {
     "level": 2,
@@ -5269,7 +5863,8 @@
     "classes": [
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "scorching-ray": {
     "level": 2,
@@ -5284,6 +5879,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "fire"
     ]
   },
   "ray-of-frost": {
@@ -5299,6 +5897,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "cold"
     ]
   },
   "moonbeam": {
@@ -5314,6 +5915,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Druid"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "sunbeam": {
@@ -5332,6 +5936,9 @@
       "Druid",
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "ray-of-sickness": {
@@ -5347,6 +5954,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "poison"
     ]
   },
   "guiding-bolt": {
@@ -5361,6 +5971,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
+    ],
+    "damage_types": [
+      "radiant"
     ]
   },
   "regenerate": {
@@ -5378,7 +5991,8 @@
       "Bard",
       "Cleric",
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "reincarnate": {
     "level": 5,
@@ -5393,7 +6007,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "mending": {
     "level": 0,
@@ -5412,7 +6027,8 @@
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "expeditious-retreat": {
     "level": 1,
@@ -5428,7 +6044,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "hellish-rebuke": {
     "level": 1,
@@ -5442,6 +6059,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Warlock"
+    ],
+    "damage_types": [
+      "fire"
     ]
   },
   "resistance": {
@@ -5457,7 +6077,8 @@
     "classes": [
       "Cleric",
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "water-breathing": {
     "level": 3,
@@ -5475,7 +6096,8 @@
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "lesser-restoration": {
     "level": 2,
@@ -5493,7 +6115,8 @@
       "Druid",
       "Paladin",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "greater-restoration": {
     "level": 5,
@@ -5512,7 +6135,8 @@
       "Druid",
       "Paladin",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "resurrection": {
     "level": 7,
@@ -5528,7 +6152,8 @@
     "classes": [
       "Bard",
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "true-resurrection": {
     "level": 9,
@@ -5544,7 +6169,8 @@
     "classes": [
       "Cleric",
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "revivify": {
     "level": 3,
@@ -5562,7 +6188,8 @@
       "Druid",
       "Paladin",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "hallow": {
     "level": 5,
@@ -5577,7 +6204,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "sanctuary": {
     "level": 1,
@@ -5592,7 +6220,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "mordenkainen-s-private-sanctum": {
     "level": 4,
@@ -5607,7 +6236,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "jump": {
     "level": 1,
@@ -5625,7 +6255,8 @@
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "scrying": {
     "level": 5,
@@ -5644,7 +6275,8 @@
       "Druid",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "homunculus-servant": {
     "level": 2,
@@ -5659,7 +6291,8 @@
     "source": "Eberron: Forge of the Artificer",
     "classes": [
       "Artificer"
-    ]
+    ],
+    "damage_types": []
   },
   "unseen-servant": {
     "level": 1,
@@ -5676,7 +6309,8 @@
       "Bard",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "silence": {
     "level": 2,
@@ -5692,7 +6326,8 @@
       "Bard",
       "Cleric",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "simulacrum": {
     "level": 7,
@@ -5707,7 +6342,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "false-life": {
     "level": 1,
@@ -5723,7 +6359,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "cure-wounds": {
     "level": 1,
@@ -5741,7 +6378,8 @@
       "Druid",
       "Paladin",
       "Ranger"
-    ]
+    ],
+    "damage_types": []
   },
   "mass-cure-wounds": {
     "level": 5,
@@ -5757,7 +6395,8 @@
       "Bard",
       "Cleric",
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "sleep": {
     "level": 1,
@@ -5774,7 +6413,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "dream": {
     "level": 5,
@@ -5791,6 +6431,9 @@
       "Bard",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "psychic"
     ]
   },
   "dragon-s-breath": {
@@ -5807,6 +6450,13 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "acid",
+      "cold",
+      "fire",
+      "lightning",
+      "poison"
     ]
   },
   "wish": {
@@ -5821,6 +6471,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "necrotic"
     ]
   },
   "flaming-sphere": {
@@ -5838,6 +6491,9 @@
       "Druid",
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "fire"
     ]
   },
   "vitriolic-sphere": {
@@ -5854,6 +6510,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "acid"
     ]
   },
   "otiluke-s-freezing-sphere": {
@@ -5870,6 +6529,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "cold"
     ]
   },
   "otiluke-s-resilient-sphere": {
@@ -5885,7 +6547,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "elminster-s-effulgent-spheres": {
     "level": 6,
@@ -5902,7 +6565,8 @@
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "spare-the-dying": {
     "level": 0,
@@ -5917,7 +6581,8 @@
     "classes": [
       "Cleric",
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "suggestion": {
     "level": 2,
@@ -5934,7 +6599,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "mass-suggestion": {
     "level": 6,
@@ -5950,7 +6616,8 @@
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "symbol": {
     "level": 7,
@@ -5968,6 +6635,9 @@
       "Cleric",
       "Druid",
       "Wizard"
+    ],
+    "damage_types": [
+      "necrotic"
     ]
   },
   "telekinesis": {
@@ -5983,7 +6653,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "telepathy": {
     "level": 8,
@@ -5998,7 +6669,8 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "teleport": {
     "level": 7,
@@ -6013,6 +6685,9 @@
       "Bard",
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "force"
     ]
   },
   "fire-storm": {
@@ -6029,6 +6704,9 @@
       "Cleric",
       "Druid",
       "Sorcerer"
+    ],
+    "damage_types": [
+      "fire"
     ]
   },
   "ice-storm": {
@@ -6046,6 +6724,10 @@
       "Druid",
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "bludgeoning",
+      "cold"
     ]
   },
   "spellfire-storm": {
@@ -6061,7 +6743,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "sleet-storm": {
     "level": 3,
@@ -6078,7 +6761,8 @@
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "jallarzi-s-storm-of-radiance": {
     "level": 5,
@@ -6094,6 +6778,10 @@
     "classes": [
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "radiant",
+      "thunder"
     ]
   },
   "storm-of-vengeance": {
@@ -6108,6 +6796,13 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Druid"
+    ],
+    "damage_types": [
+      "acid",
+      "bludgeoning",
+      "cold",
+      "lightning",
+      "thunder"
     ]
   },
   "darkness": {
@@ -6124,7 +6819,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "arms-of-hadar": {
     "level": 1,
@@ -6138,6 +6834,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Warlock"
+    ],
+    "damage_types": [
+      "necrotic"
     ]
   },
   "evard-s-black-tentacles": {
@@ -6153,6 +6852,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
+    ],
+    "damage_types": [
+      "bludgeoning"
     ]
   },
   "hallucinatory-terrain": {
@@ -6171,7 +6873,8 @@
       "Druid",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "illusory-script": {
     "level": 1,
@@ -6187,7 +6890,8 @@
       "Bard",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "thaumaturgy": {
     "level": 0,
@@ -6200,7 +6904,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Cleric"
-    ]
+    ],
+    "damage_types": []
   },
   "web": {
     "level": 2,
@@ -6216,7 +6921,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "fire-bolt": {
     "level": 0,
@@ -6231,6 +6937,9 @@
     "classes": [
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "fire"
     ]
   },
   "witch-bolt": {
@@ -6248,6 +6957,9 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
+    ],
+    "damage_types": [
+      "lightning"
     ]
   },
   "simbul-s-synostodweomer": {
@@ -6263,7 +6975,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "earthquake": {
     "level": 8,
@@ -6280,6 +6993,9 @@
       "Cleric",
       "Druid",
       "Sorcerer"
+    ],
+    "damage_types": [
+      "bludgeoning"
     ]
   },
   "tsunami": {
@@ -6294,6 +7010,9 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Druid"
+    ],
+    "damage_types": [
+      "bludgeoning"
     ]
   },
   "magic-jar": {
@@ -6309,7 +7028,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "destructive-wave": {
     "level": 5,
@@ -6322,6 +7042,11 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Paladin"
+    ],
+    "damage_types": [
+      "necrotic",
+      "radiant",
+      "thunder"
     ]
   },
   "thunderwave": {
@@ -6339,6 +7064,9 @@
       "Druid",
       "Sorcerer",
       "Wizard"
+    ],
+    "damage_types": [
+      "thunder"
     ]
   },
   "wind-walk": {
@@ -6354,7 +7082,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "arcane-lock": {
     "level": 2,
@@ -6369,7 +7098,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "swift-quiver": {
     "level": 5,
@@ -6384,6 +7114,9 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Ranger"
+    ],
+    "damage_types": [
+      "piercing"
     ]
   },
   "arcane-vigor": {
@@ -6399,7 +7132,8 @@
     "classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "sylune-s-viper": {
     "level": 3,
@@ -6415,7 +7149,8 @@
     "classes": [
       "Druid",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "darkvision": {
     "level": 2,
@@ -6433,7 +7168,8 @@
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "true-seeing": {
     "level": 6,
@@ -6452,7 +7188,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "transport-via-plants": {
     "level": 6,
@@ -6466,7 +7203,8 @@
     "source": "Player´s Handbook 2024 (BR)",
     "classes": [
       "Druid"
-    ]
+    ],
+    "damage_types": []
   },
   "blade-ward": {
     "level": 0,
@@ -6483,7 +7221,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "fly": {
     "level": 3,
@@ -6500,7 +7239,8 @@
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "damage_types": []
   },
   "hunger-of-hadar": {
     "level": 3,
@@ -6515,6 +7255,10 @@
     "source": "Player´s Handbook 2024",
     "classes": [
       "Warlock"
+    ],
+    "damage_types": [
+      "acid",
+      "cold"
     ]
   },
   "zone-of-truth": {
@@ -6531,6 +7275,7 @@
       "Bard",
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "damage_types": []
   }
 }

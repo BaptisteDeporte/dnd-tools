@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef } from "react"
-import type { FilterState, School, DndClass, Component, GrimoireFilterMode } from "../data/types"
+import type { FilterState, School, DndClass, Component, GrimoireFilterMode, DamageType } from "../data/types"
 import { emptyFilters } from "../data/types"
 
 const SCHOOLS: School[] = [
@@ -11,6 +11,10 @@ const CLASSES: DndClass[] = [
   "Ranger", "Sorcerer", "Warlock", "Wizard",
 ]
 const COMPONENTS: Component[] = ["V", "S", "M"]
+const DAMAGE_TYPES: DamageType[] = [
+  "acid", "bludgeoning", "cold", "fire", "force", "lightning",
+  "necrotic", "piercing", "poison", "psychic", "radiant", "slashing", "thunder",
+]
 
 const parseList = <T extends string>(raw: string | null, allowed: readonly T[]): T[] => {
   if (!raw) return []
@@ -44,6 +48,7 @@ export const filtersFromSearchParams = (params: URLSearchParams): FilterState =>
   search: params.get("q") ?? "",
   grimoires: params.get("grimoires")?.split(",").filter(Boolean) ?? [],
   grimoireMode: parseGrimoireMode(params.get("grimoireMode")),
+  damageTypes: parseList(params.get("dmg"), DAMAGE_TYPES),
 })
 
 export const filtersToSearchParams = (filters: FilterState): URLSearchParams => {
@@ -60,6 +65,7 @@ export const filtersToSearchParams = (filters: FilterState): URLSearchParams => 
     params.set("grimoires", filters.grimoires.join(","))
     if (filters.grimoireMode !== "exclude") params.set("grimoireMode", filters.grimoireMode)
   }
+  if (filters.damageTypes.length > 0) params.set("dmg", filters.damageTypes.join(","))
   return params
 }
 
@@ -72,7 +78,8 @@ const isEmptyFilters = (filters: FilterState): boolean =>
   filters.ritual === null &&
   filters.sources.length === 0 &&
   filters.search === "" &&
-  filters.grimoires.length === 0
+  filters.grimoires.length === 0 &&
+  filters.damageTypes.length === 0
 
 export const readInitialFilters = (): FilterState => {
   const params = new URLSearchParams(window.location.search)

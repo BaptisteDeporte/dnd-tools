@@ -14,6 +14,7 @@ import { useLanguage } from "@/i18n/LanguageContext"
 import { useGrimoiresContext } from "@/features/grimoires/GrimoiresContext"
 import { parseRange, parseDuration } from "../data/parse"
 import { CellWithTooltip } from "../components/CellWithTooltip"
+import { DamageTypeCell } from "../components/DamageTypeBadge"
 import { readInitialFilters, useSyncFiltersToURL } from "./useFiltersSearchParams"
 
 const matchesMultiSelect = <T,>(filter: T[], value: T): boolean =>
@@ -51,6 +52,7 @@ export const useSpellTable = (spells: Spell[]) => {
       if (!matchesBoolFilter(filters.concentration, spell.concentration)) return false
       if (!matchesBoolFilter(filters.ritual, spell.ritual)) return false
       if (!matchesMultiSelect(filters.sources, spell.source)) return false
+      if (!matchesArrayAny(filters.damageTypes, spell.damage_types)) return false
       if (filters.search !== "" && !spell.name.toLowerCase().includes(filters.search.toLowerCase())) return false
 
       if (selectedGrimoires.length > 0) {
@@ -186,6 +188,14 @@ export const useSpellTable = (spells: Spell[]) => {
         header: () => t("column.ritual"),
         cell: (info) => (info.getValue() ? "✦" : ""),
       },
+      {
+        accessorKey: "damage_types",
+        header: () => t("column.damageType"),
+        cell: (info) => (
+          <DamageTypeCell types={info.getValue() as Spell["damage_types"]} />
+        ),
+        enableSorting: false,
+      },
     ],
     [t]
   )
@@ -219,7 +229,8 @@ export const useSpellTable = (spells: Spell[]) => {
     filters.ritual !== null ||
     filters.sources.length > 0 ||
     filters.search !== "" ||
-    filters.grimoires.length > 0
+    filters.grimoires.length > 0 ||
+    filters.damageTypes.length > 0
 
   const selectedSlugs = Object.keys(rowSelection).filter((k) => rowSelection[k])
   const clearSelection = () => setRowSelection({})
