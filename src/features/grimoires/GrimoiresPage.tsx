@@ -5,13 +5,20 @@ import { useLanguage } from "@/i18n/LanguageContext"
 import { useGrimoiresContext } from "./GrimoiresContext"
 import { GrimoireList } from "./components/GrimoireList"
 import { GrimoireDetail } from "./components/GrimoireDetail"
+import { ImportExportButtons } from "./components/ImportExportButtons"
 import { SpellDetailSheet } from "@/features/spells/components/SpellDetailSheet"
 import { Button } from "@/components/ui/button"
 
 export const GrimoiresPage = () => {
   const { lang } = useLanguage()
-  const { grimoires, createGrimoire, renameGrimoire, deleteGrimoire, removeSpell } =
-    useGrimoiresContext()
+  const {
+    grimoires,
+    createGrimoire,
+    renameGrimoire,
+    deleteGrimoire,
+    removeSpell,
+    importGrimoires,
+  } = useGrimoiresContext()
 
   const spells = useMemo(() => buildSpellList(lang), [lang])
   const spellsBySlug = useMemo(
@@ -37,7 +44,10 @@ export const GrimoiresPage = () => {
 
   if (grimoires.length === 0) {
     return (
-      <EmptyState onCreate={handleCreate} />
+      <EmptyState
+        onCreate={handleCreate}
+        onImport={importGrimoires}
+      />
     )
   }
 
@@ -53,6 +63,7 @@ export const GrimoiresPage = () => {
             onCreate={handleCreate}
             onRename={renameGrimoire}
             onDelete={handleDelete}
+            onImport={importGrimoires}
           />
         </div>
 
@@ -73,7 +84,12 @@ export const GrimoiresPage = () => {
   )
 }
 
-const EmptyState = ({ onCreate }: { onCreate: (name: string) => void }) => {
+interface EmptyStateProps {
+  onCreate: (name: string) => void
+  onImport: (data: import("./data/schema").GrimoiresExport) => void
+}
+
+const EmptyState = ({ onCreate, onImport }: EmptyStateProps) => {
   const { t } = useLanguage()
   const [isCreating, setIsCreating] = useState(false)
   const [name, setName] = useState("")
@@ -135,9 +151,15 @@ const EmptyState = ({ onCreate }: { onCreate: (name: string) => void }) => {
           </button>
         </div>
       ) : (
-        <Button onClick={() => setIsCreating(true)}>
-          + {t("grimoire.new")}
-        </Button>
+        <div className="flex items-center gap-2">
+          <Button onClick={() => setIsCreating(true)}>
+            + {t("grimoire.new")}
+          </Button>
+          <ImportExportButtons
+            grimoires={[]}
+            onImport={onImport}
+          />
+        </div>
       )}
     </div>
   )

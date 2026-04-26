@@ -1,5 +1,7 @@
 import { useState, useCallback } from "react"
 import type { Grimoire } from "../data/types"
+import type { GrimoiresExport } from "../data/schema"
+
 
 const STORAGE_KEY = "dnd-tools-grimoires"
 
@@ -121,6 +123,24 @@ export const useGrimoires = () => {
     [grimoires]
   )
 
+  // Merge strategy: imported grimoires with an existing ID overwrite the local
+  // one; brand-new IDs are appended.
+  const importGrimoires = useCallback(
+    (imported: GrimoiresExport) => {
+      const merged = [...grimoires]
+      for (const g of imported) {
+        const idx = merged.findIndex((m) => m.id === g.id)
+        if (idx !== -1) {
+          merged[idx] = g
+        } else {
+          merged.push(g)
+        }
+      }
+      persist(merged)
+    },
+    [grimoires, persist]
+  )
+
   return {
     grimoires,
     createGrimoire,
@@ -131,6 +151,7 @@ export const useGrimoires = () => {
     removeSpell,
     isSpellIn,
     getGrimoiresContaining,
+    importGrimoires,
   }
 }
 

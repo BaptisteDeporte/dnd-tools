@@ -2,6 +2,9 @@ import { useState, useRef, useEffect } from "react"
 import type { Grimoire } from "../data/types"
 import { useLanguage } from "@/i18n/LanguageContext"
 import { Button } from "@/components/ui/button"
+import { ImportExportButtons } from "./ImportExportButtons"
+
+import type { GrimoiresExport } from "../data/schema"
 
 interface GrimoireListProps {
   grimoires: Grimoire[]
@@ -10,6 +13,7 @@ interface GrimoireListProps {
   onCreate: (name: string) => void
   onRename: (id: string, newName: string) => void
   onDelete: (id: string) => void
+  onImport: (data: GrimoiresExport) => void
 }
 
 interface GrimoireItemProps {
@@ -221,23 +225,30 @@ export const GrimoireList = ({
   onCreate,
   onRename,
   onDelete,
+  onImport,
 }: GrimoireListProps) => {
   const { t } = useLanguage()
   const [isCreating, setIsCreating] = useState(false)
 
   return (
     <div className="flex flex-col gap-2">
-      <div className="flex items-center justify-between">
-        <span className="text-sm font-medium text-muted-foreground">
+      <div className="flex items-center justify-between gap-1">
+        <span className="shrink-0 whitespace-nowrap text-sm font-medium text-muted-foreground">
           {grimoires.length > 0
             ? `${grimoires.length} grimoire${grimoires.length > 1 ? "s" : ""}`
             : ""}
         </span>
-        {!isCreating && (
-          <Button size="sm" variant="outline" onClick={() => setIsCreating(true)}>
-            + {t("grimoire.new")}
-          </Button>
-        )}
+        <div className="flex items-center gap-1">
+          <ImportExportButtons
+            grimoires={grimoires}
+            onImport={onImport}
+          />
+          {!isCreating && (
+            <Button size="sm" variant="outline" onClick={() => setIsCreating(true)}>
+              + {t("grimoire.new")}
+            </Button>
+          )}
+        </div>
       </div>
 
       {isCreating && (
