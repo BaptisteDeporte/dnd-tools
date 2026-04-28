@@ -123,6 +123,22 @@ export const useGrimoires = () => {
     [grimoires]
   )
 
+  const duplicateGrimoire = useCallback(
+    (_sourceId: string, name: string, spellSlugs: string[]): Grimoire => {
+      const now = Date.now()
+      const grimoire: Grimoire = {
+        id: crypto.randomUUID(),
+        name: name.trim(),
+        spellSlugs,
+        createdAt: now,
+        updatedAt: now,
+      }
+      persist([...grimoires, grimoire])
+      return grimoire
+    },
+    [grimoires, persist]
+  )
+
   // Merge strategy: imported grimoires with an existing ID overwrite the local
   // one; brand-new IDs are appended.
   const importGrimoires = useCallback(
@@ -144,6 +160,7 @@ export const useGrimoires = () => {
   return {
     grimoires,
     createGrimoire,
+    duplicateGrimoire,
     renameGrimoire,
     deleteGrimoire,
     addSpell,

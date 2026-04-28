@@ -6,14 +6,17 @@ import { useGrimoiresContext } from "./GrimoiresContext"
 import { GrimoireList } from "./components/GrimoireList"
 import { GrimoireDetail } from "./components/GrimoireDetail"
 import { ImportExportButtons } from "./components/ImportExportButtons"
+import { DuplicateGrimoireDialog } from "./components/DuplicateGrimoireDialog"
 import { SpellDetailSheet } from "@/features/spells/components/SpellDetailSheet"
 import { Button } from "@/components/ui/button"
+import type { Grimoire } from "./data/types"
 
 export const GrimoiresPage = () => {
   const { lang } = useLanguage()
   const {
     grimoires,
     createGrimoire,
+    duplicateGrimoire,
     renameGrimoire,
     deleteGrimoire,
     removeSpell,
@@ -28,6 +31,7 @@ export const GrimoiresPage = () => {
 
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [selectedSpell, setSelectedSpell] = useState<Spell | null>(null)
+  const [duplicatingGrimoire, setDuplicatingGrimoire] = useState<Grimoire | null>(null)
 
   const selectedGrimoire = grimoires.find((g) => g.id === selectedId) ?? null
 
@@ -63,6 +67,7 @@ export const GrimoiresPage = () => {
             onCreate={handleCreate}
             onRename={renameGrimoire}
             onDelete={handleDelete}
+            onDuplicate={(id) => setDuplicatingGrimoire(grimoires.find((g) => g.id === id) ?? null)}
             onImport={importGrimoires}
           />
         </div>
@@ -79,6 +84,17 @@ export const GrimoiresPage = () => {
       <SpellDetailSheet
         spell={selectedSpell}
         onClose={() => setSelectedSpell(null)}
+      />
+
+      <DuplicateGrimoireDialog
+        grimoire={duplicatingGrimoire}
+        spellsBySlug={spellsBySlug}
+        onConfirm={(name, spellSlugs) => {
+          const created = duplicateGrimoire(duplicatingGrimoire!.id, name, spellSlugs)
+          setSelectedId(created.id)
+          setDuplicatingGrimoire(null)
+        }}
+        onClose={() => setDuplicatingGrimoire(null)}
       />
     </div>
   )

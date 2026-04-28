@@ -13,6 +13,7 @@ interface GrimoireListProps {
   onCreate: (name: string) => void
   onRename: (id: string, newName: string) => void
   onDelete: (id: string) => void
+  onDuplicate: (id: string) => void
   onImport: (data: GrimoiresExport) => void
 }
 
@@ -22,6 +23,7 @@ interface GrimoireItemProps {
   onSelect: () => void
   onRename: (newName: string) => void
   onDelete: () => void
+  onDuplicate: () => void
 }
 
 const GrimoireItem = ({
@@ -30,6 +32,7 @@ const GrimoireItem = ({
   onSelect,
   onRename,
   onDelete,
+  onDuplicate,
 }: GrimoireItemProps) => {
   const { t } = useLanguage()
   const [isRenaming, setIsRenaming] = useState(false)
@@ -119,6 +122,20 @@ const GrimoireItem = ({
               {/* Pencil icon */}
               <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
+              </svg>
+            </button>
+            <button
+              onClick={(e) => {
+                e.stopPropagation()
+                onDuplicate()
+              }}
+              className="rounded p-0.5 text-muted-foreground hover:bg-accent hover:text-foreground"
+              title={t("grimoire.duplicate")}
+            >
+              {/* Copy icon */}
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
               </svg>
             </button>
             <button
@@ -225,6 +242,7 @@ export const GrimoireList = ({
   onCreate,
   onRename,
   onDelete,
+  onDuplicate,
   onImport,
 }: GrimoireListProps) => {
   const { t } = useLanguage()
@@ -270,6 +288,7 @@ export const GrimoireList = ({
             onSelect={() => onSelect(g.id)}
             onRename={(name) => onRename(g.id, name)}
             onDelete={() => onDelete(g.id)}
+            onDuplicate={() => onDuplicate(g.id)}
           />
         ))}
       </div>
