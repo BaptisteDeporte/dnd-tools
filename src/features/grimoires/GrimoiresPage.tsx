@@ -21,6 +21,7 @@ export const GrimoiresPage = () => {
     deleteGrimoire,
     removeSpell,
     importGrimoires,
+    togglePrepared,
   } = useGrimoiresContext()
 
   const spells = useMemo(() => buildSpellList(lang), [lang])
@@ -78,6 +79,7 @@ export const GrimoiresPage = () => {
           spellsBySlug={spellsBySlug}
           onRemoveSpell={removeSpell}
           onSelectSpell={setSelectedSpell}
+          onTogglePrepared={togglePrepared}
         />
       </div>
 

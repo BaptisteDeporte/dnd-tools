@@ -8,7 +8,9 @@ const STORAGE_KEY = "dnd-tools-grimoires"
 const loadFromStorage = (): Grimoire[] => {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
-    return raw ? (JSON.parse(raw) as Grimoire[]) : []
+    if (!raw) return []
+    const parsed = JSON.parse(raw) as Array<Omit<Grimoire, "preparedSlugs"> & { preparedSlugs?: string[] }>
+    return parsed.map((g) => ({ ...g, preparedSlugs: g.preparedSlugs ?? [] }))
   } catch {
     return []
   }
@@ -29,6 +31,7 @@ export const useGrimoires = () => {
         id: crypto.randomUUID(),
         name: name.trim(),
         spellSlugs: [],
+        preparedSlugs: [],
         createdAt: now,
         updatedAt: now,
       }
@@ -124,17 +127,38 @@ export const useGrimoires = () => {
   )
 
   const duplicateGrimoire = useCallback(
-    (_sourceId: string, name: string, spellSlugs: string[]): Grimoire => {
+    (sourceId: string, name: string, spellSlugs: string[]): Grimoire => {
+      const source = grimoires.find((g) => g.id === sourceId)
       const now = Date.now()
       const grimoire: Grimoire = {
         id: crypto.randomUUID(),
         name: name.trim(),
         spellSlugs,
+        preparedSlugs: source ? source.preparedSlugs.filter((s) => spellSlugs.includes(s)) : [],
         createdAt: now,
         updatedAt: now,
       }
       persist([...grimoires, grimoire])
       return grimoire
+    },
+    [grimoires, persist]
+  )
+
+  const togglePrepared = useCallback(
+    (grimoireId: string, spellSlug: string) => {
+      persist(
+        grimoires.map((g) => {
+          if (g.id !== grimoireId) return g
+          const isPrepared = g.preparedSlugs.includes(spellSlug)
+          return {
+            ...g,
+            preparedSlugs: isPrepared
+              ? g.preparedSlugs.filter((s) => s !== spellSlug)
+              : [...g.preparedSlugs, spellSlug],
+            updatedAt: Date.now(),
+          }
+        })
+      )
     },
     [grimoires, persist]
   )
@@ -169,6 +193,7 @@ export const useGrimoires = () => {
     isSpellIn,
     getGrimoiresContaining,
     importGrimoires,
+    togglePrepared,
   }
 }
 

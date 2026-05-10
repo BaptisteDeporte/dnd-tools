@@ -8,6 +8,7 @@ interface GrimoireDetailProps {
   spellsBySlug: Map<string, Spell>
   onRemoveSpell: (grimoireId: string, slug: string) => void
   onSelectSpell: (spell: Spell) => void
+  onTogglePrepared: (grimoireId: string, slug: string) => void
 }
 
 const LEVEL_COLORS: Record<number, string> = {
@@ -28,6 +29,7 @@ export const GrimoireDetail = ({
   spellsBySlug,
   onRemoveSpell,
   onSelectSpell,
+  onTogglePrepared,
 }: GrimoireDetailProps) => {
   const { t } = useLanguage()
 
@@ -80,43 +82,57 @@ export const GrimoireDetail = ({
       </div>
 
       <div className="flex flex-col divide-y rounded-lg border">
-        {spells.map((spell) => (
-          <div
-            key={spell.slug}
-            className="group flex items-center gap-3 px-3 py-2.5 transition-colors hover:bg-accent/40"
-          >
-            {/* Level badge */}
-            <span
-              className={`shrink-0 rounded px-1.5 py-0.5 text-xs font-medium ${LEVEL_COLORS[spell.level] ?? ""}`}
+        {spells.map((spell) => {
+          const isCantrip = spell.level === 0
+          const isPrepared = isCantrip || grimoire.preparedSlugs.includes(spell.slug)
+          return (
+            <div
+              key={spell.slug}
+              className="group flex items-center gap-3 px-3 py-2.5 transition-colors hover:bg-accent/40"
             >
-              {spell.level === 0 ? t("level.cantrip").slice(0, 3) : `N${spell.level}`}
-            </span>
+              {/* Level badge */}
+              <span
+                className={`shrink-0 rounded px-1.5 py-0.5 text-xs font-medium ${LEVEL_COLORS[spell.level] ?? ""}`}
+              >
+                {isCantrip ? t("level.cantrip").slice(0, 3) : `N${spell.level}`}
+              </span>
 
-            {/* Name (clickable) */}
-            <button
-              onClick={() => onSelectSpell(spell)}
-              className="min-w-0 flex-1 truncate text-left text-sm font-medium hover:text-primary hover:underline"
-            >
-              {spell.name}
-            </button>
+              {/* Name (clickable) */}
+              <button
+                onClick={() => onSelectSpell(spell)}
+                className="min-w-0 flex-1 truncate text-left text-sm font-medium hover:text-primary hover:underline"
+              >
+                {spell.name}
+              </button>
 
-            {/* School */}
-            <Badge variant="secondary" className="hidden shrink-0 sm:flex">
-              {t(`school.${spell.school}` as `school.${School}`)}
-            </Badge>
+              {/* School */}
+              <Badge variant="secondary" className="hidden shrink-0 sm:flex">
+                {t(`school.${spell.school}` as `school.${School}`)}
+              </Badge>
 
-            {/* Remove button */}
-            <button
-              onClick={() => onRemoveSpell(grimoire.id, spell.slug)}
-              className="shrink-0 rounded p-1 text-muted-foreground opacity-0 transition-opacity hover:bg-destructive/10 hover:text-destructive group-hover:opacity-100"
-              title={t("grimoire.remove.spell")}
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18 6 6 18" /><path d="m6 6 12 12" />
-              </svg>
-            </button>
-          </div>
-        ))}
+              {/* Prepared checkbox */}
+              <input
+                type="checkbox"
+                checked={isPrepared}
+                disabled={isCantrip}
+                onChange={() => onTogglePrepared(grimoire.id, spell.slug)}
+                title={t("grimoire.spell.prepared")}
+                className="shrink-0 cursor-pointer accent-primary disabled:cursor-default disabled:opacity-50"
+              />
+
+              {/* Remove button */}
+              <button
+                onClick={() => onRemoveSpell(grimoire.id, spell.slug)}
+                className="shrink-0 rounded p-1 text-muted-foreground opacity-0 transition-opacity hover:bg-destructive/10 hover:text-destructive group-hover:opacity-100"
+                title={t("grimoire.remove.spell")}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M18 6 6 18" /><path d="m6 6 12 12" />
+                </svg>
+              </button>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
