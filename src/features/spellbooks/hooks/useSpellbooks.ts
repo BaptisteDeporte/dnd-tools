@@ -1,33 +1,33 @@
 import { useState, useCallback } from "react"
-import type { Grimoire } from "../data/types"
-import type { GrimoiresExport } from "../data/schema"
+import type { Spellbook } from "../data/types"
+import type { SpellbooksExport } from "../data/schema"
 
 
-const STORAGE_KEY = "dnd-tools-grimoires"
+const STORAGE_KEY = "dnd-tools-spellbooks"
 
-const loadFromStorage = (): Grimoire[] => {
+const loadFromStorage = (): Spellbook[] => {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
     if (!raw) return []
-    const parsed = JSON.parse(raw) as Array<Omit<Grimoire, "preparedSlugs"> & { preparedSlugs?: string[] }>
+    const parsed = JSON.parse(raw) as Array<Omit<Spellbook, "preparedSlugs"> & { preparedSlugs?: string[] }>
     return parsed.map((g) => ({ ...g, preparedSlugs: g.preparedSlugs ?? [] }))
   } catch {
     return []
   }
 }
 
-export const useGrimoires = () => {
-  const [grimoires, setGrimoires] = useState<Grimoire[]>(loadFromStorage)
+export const useSpellbooks = () => {
+  const [spellbooks, setSpellbooks] = useState<Spellbook[]>(loadFromStorage)
 
-  const persist = useCallback((updated: Grimoire[]) => {
+  const persist = useCallback((updated: Spellbook[]) => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(updated))
-    setGrimoires(updated)
+    setSpellbooks(updated)
   }, [])
 
-  const createGrimoire = useCallback(
-    (name: string): Grimoire => {
+  const createSpellbook = useCallback(
+    (name: string): Spellbook => {
       const now = Date.now()
-      const grimoire: Grimoire = {
+      const spellbook: Spellbook = {
         id: crypto.randomUUID(),
         name: name.trim(),
         spellSlugs: [],
@@ -35,38 +35,38 @@ export const useGrimoires = () => {
         createdAt: now,
         updatedAt: now,
       }
-      const updated = [...grimoires, grimoire]
+      const updated = [...spellbooks, spellbook]
       persist(updated)
-      return grimoire
+      return spellbook
     },
-    [grimoires, persist]
+    [spellbooks, persist]
   )
 
-  const renameGrimoire = useCallback(
+  const renameSpellbook = useCallback(
     (id: string, newName: string) => {
       persist(
-        grimoires.map((g) =>
+        spellbooks.map((g) =>
           g.id === id
             ? { ...g, name: newName.trim(), updatedAt: Date.now() }
             : g
         )
       )
     },
-    [grimoires, persist]
+    [spellbooks, persist]
   )
 
-  const deleteGrimoire = useCallback(
+  const deleteSpellbook = useCallback(
     (id: string) => {
-      persist(grimoires.filter((g) => g.id !== id))
+      persist(spellbooks.filter((g) => g.id !== id))
     },
-    [grimoires, persist]
+    [spellbooks, persist]
   )
 
   const addSpell = useCallback(
-    (grimoireId: string, spellSlug: string) => {
+    (spellbookId: string, spellSlug: string) => {
       persist(
-        grimoires.map((g) =>
-          g.id === grimoireId && !g.spellSlugs.includes(spellSlug)
+        spellbooks.map((g) =>
+          g.id === spellbookId && !g.spellSlugs.includes(spellSlug)
             ? {
                 ...g,
                 spellSlugs: [...g.spellSlugs, spellSlug],
@@ -76,14 +76,14 @@ export const useGrimoires = () => {
         )
       )
     },
-    [grimoires, persist]
+    [spellbooks, persist]
   )
 
   const addSpells = useCallback(
-    (grimoireId: string, spellSlugs: string[]) => {
+    (spellbookId: string, spellSlugs: string[]) => {
       persist(
-        grimoires.map((g) => {
-          if (g.id !== grimoireId) return g
+        spellbooks.map((g) => {
+          if (g.id !== spellbookId) return g
           const toAdd = spellSlugs.filter((s) => !g.spellSlugs.includes(s))
           if (toAdd.length === 0) return g
           return {
@@ -94,14 +94,14 @@ export const useGrimoires = () => {
         })
       )
     },
-    [grimoires, persist]
+    [spellbooks, persist]
   )
 
   const removeSpell = useCallback(
-    (grimoireId: string, spellSlug: string) => {
+    (spellbookId: string, spellSlug: string) => {
       persist(
-        grimoires.map((g) =>
-          g.id === grimoireId
+        spellbooks.map((g) =>
+          g.id === spellbookId
             ? {
                 ...g,
                 spellSlugs: g.spellSlugs.filter((s) => s !== spellSlug),
@@ -111,26 +111,26 @@ export const useGrimoires = () => {
         )
       )
     },
-    [grimoires, persist]
+    [spellbooks, persist]
   )
 
   const isSpellIn = useCallback(
-    (grimoireId: string, spellSlug: string): boolean =>
-      grimoires.find((g) => g.id === grimoireId)?.spellSlugs.includes(spellSlug) ?? false,
-    [grimoires]
+    (spellbookId: string, spellSlug: string): boolean =>
+      spellbooks.find((g) => g.id === spellbookId)?.spellSlugs.includes(spellSlug) ?? false,
+    [spellbooks]
   )
 
-  const getGrimoiresContaining = useCallback(
-    (spellSlug: string): Grimoire[] =>
-      grimoires.filter((g) => g.spellSlugs.includes(spellSlug)),
-    [grimoires]
+  const getSpellbooksContaining = useCallback(
+    (spellSlug: string): Spellbook[] =>
+      spellbooks.filter((g) => g.spellSlugs.includes(spellSlug)),
+    [spellbooks]
   )
 
-  const duplicateGrimoire = useCallback(
-    (sourceId: string, name: string, spellSlugs: string[]): Grimoire => {
-      const source = grimoires.find((g) => g.id === sourceId)
+  const duplicateSpellbook = useCallback(
+    (sourceId: string, name: string, spellSlugs: string[]): Spellbook => {
+      const source = spellbooks.find((g) => g.id === sourceId)
       const now = Date.now()
-      const grimoire: Grimoire = {
+      const spellbook: Spellbook = {
         id: crypto.randomUUID(),
         name: name.trim(),
         spellSlugs,
@@ -138,17 +138,17 @@ export const useGrimoires = () => {
         createdAt: now,
         updatedAt: now,
       }
-      persist([...grimoires, grimoire])
-      return grimoire
+      persist([...spellbooks, spellbook])
+      return spellbook
     },
-    [grimoires, persist]
+    [spellbooks, persist]
   )
 
   const togglePrepared = useCallback(
-    (grimoireId: string, spellSlug: string) => {
+    (spellbookId: string, spellSlug: string) => {
       persist(
-        grimoires.map((g) => {
-          if (g.id !== grimoireId) return g
+        spellbooks.map((g) => {
+          if (g.id !== spellbookId) return g
           const isPrepared = g.preparedSlugs.includes(spellSlug)
           return {
             ...g,
@@ -160,14 +160,14 @@ export const useGrimoires = () => {
         })
       )
     },
-    [grimoires, persist]
+    [spellbooks, persist]
   )
 
-  // Merge strategy: imported grimoires with an existing ID overwrite the local
+  // Merge strategy: imported spellbooks with an existing ID overwrite the local
   // one; brand-new IDs are appended.
-  const importGrimoires = useCallback(
-    (imported: GrimoiresExport) => {
-      const merged = [...grimoires]
+  const importSpellbooks = useCallback(
+    (imported: SpellbooksExport) => {
+      const merged = [...spellbooks]
       for (const g of imported) {
         const idx = merged.findIndex((m) => m.id === g.id)
         if (idx !== -1) {
@@ -178,23 +178,23 @@ export const useGrimoires = () => {
       }
       persist(merged)
     },
-    [grimoires, persist]
+    [spellbooks, persist]
   )
 
   return {
-    grimoires,
-    createGrimoire,
-    duplicateGrimoire,
-    renameGrimoire,
-    deleteGrimoire,
+    spellbooks,
+    createSpellbook,
+    duplicateSpellbook,
+    renameSpellbook,
+    deleteSpellbook,
     addSpell,
     addSpells,
     removeSpell,
     isSpellIn,
-    getGrimoiresContaining,
-    importGrimoires,
+    getSpellbooksContaining,
+    importSpellbooks,
     togglePrepared,
   }
 }
 
-export type GrimoiresState = ReturnType<typeof useGrimoires>
+export type SpellbooksState = ReturnType<typeof useSpellbooks>

@@ -2,17 +2,17 @@ import { useState, useRef, useEffect } from "react"
 import { Dialog } from "@base-ui/react/dialog"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/i18n/LanguageContext"
-import { GrimoiresExportSchema } from "../data/schema"
-import type { GrimoiresExport } from "../data/schema"
-import type { Grimoire } from "../data/types"
+import { SpellbooksExportSchema } from "../data/schema"
+import type { SpellbooksExport } from "../data/schema"
+import type { Spellbook } from "../data/types"
 import { cn } from "@/lib/utils"
 
 interface ImportExportButtonsProps {
-  grimoires: Grimoire[]
-  onImport: (data: GrimoiresExport) => void
+  spellbooks: Spellbook[]
+  onImport: (data: SpellbooksExport) => void
 }
 
-export const ImportExportButtons = ({ grimoires, onImport }: ImportExportButtonsProps) => {
+export const ImportExportButtons = ({ spellbooks, onImport }: ImportExportButtonsProps) => {
   const { t } = useLanguage()
 
   // ── Export dialog ─────────────────────────────────────────────────────────
@@ -21,8 +21,8 @@ export const ImportExportButtons = ({ grimoires, onImport }: ImportExportButtons
   const [exportCopied, setExportCopied] = useState(false)
   const selectAllRef = useRef<HTMLInputElement>(null)
 
-  const allSelected = grimoires.length > 0 && selectedIds.size === grimoires.length
-  const someSelected = selectedIds.size > 0 && selectedIds.size < grimoires.length
+  const allSelected = spellbooks.length > 0 && selectedIds.size === spellbooks.length
+  const someSelected = selectedIds.size > 0 && selectedIds.size < spellbooks.length
 
   // Keep the "select all" checkbox indeterminate in sync
   useEffect(() => {
@@ -32,8 +32,8 @@ export const ImportExportButtons = ({ grimoires, onImport }: ImportExportButtons
   }, [someSelected])
 
   const openExportDialog = () => {
-    // Pre-select all grimoires when opening
-    setSelectedIds(new Set(grimoires.map((g) => g.id)))
+    // Pre-select all spellbooks when opening
+    setSelectedIds(new Set(spellbooks.map((g) => g.id)))
     setExportCopied(false)
     setIsExportOpen(true)
   }
@@ -45,7 +45,7 @@ export const ImportExportButtons = ({ grimoires, onImport }: ImportExportButtons
 
   const toggleAll = () => {
     setSelectedIds(
-      allSelected ? new Set() : new Set(grimoires.map((g) => g.id)),
+      allSelected ? new Set() : new Set(spellbooks.map((g) => g.id)),
     )
   }
 
@@ -59,7 +59,7 @@ export const ImportExportButtons = ({ grimoires, onImport }: ImportExportButtons
   }
 
   const handleCopyExport = async () => {
-    const selected = grimoires.filter((g) => selectedIds.has(g.id))
+    const selected = spellbooks.filter((g) => selectedIds.has(g.id))
     const json = JSON.stringify(selected, null, 2)
     try {
       await navigator.clipboard.writeText(json)
@@ -108,7 +108,7 @@ export const ImportExportButtons = ({ grimoires, onImport }: ImportExportButtons
       return
     }
 
-    const result = GrimoiresExportSchema.safeParse(parsed)
+    const result = SpellbooksExportSchema.safeParse(parsed)
     if (!result.success) {
       const issue = result.error.issues[0]
       const path = issue.path.length > 0 ? `[${issue.path.join(".")}] ` : ""
@@ -139,7 +139,7 @@ export const ImportExportButtons = ({ grimoires, onImport }: ImportExportButtons
       <Button
         size="icon-sm"
         variant="ghost"
-        disabled={grimoires.length === 0}
+        disabled={spellbooks.length === 0}
         onClick={openExportDialog}
         title={t("grimoire.export")}
         className="text-muted-foreground hover:text-foreground"
@@ -168,7 +168,7 @@ export const ImportExportButtons = ({ grimoires, onImport }: ImportExportButtons
               </Dialog.Description>
             </div>
 
-            {/* Grimoire list with checkboxes */}
+            {/* Spellbook list with checkboxes */}
             <div className="flex flex-col overflow-hidden rounded-lg border">
               {/* Select-all header */}
               <label className="flex cursor-pointer items-center gap-3 border-b bg-muted/40 px-3 py-2 text-sm font-medium hover:bg-muted/60">
@@ -181,13 +181,13 @@ export const ImportExportButtons = ({ grimoires, onImport }: ImportExportButtons
                 />
                 {t("grimoire.export.selectAll")}
                 <span className="ml-auto text-xs font-normal text-muted-foreground">
-                  {t("grimoire.export.selectedCount", { count: selectedIds.size, total: grimoires.length })}
+                  {t("grimoire.export.selectedCount", { count: selectedIds.size, total: spellbooks.length })}
                 </span>
               </label>
 
-              {/* Individual grimoires */}
+              {/* Individual spellbooks */}
               <div className="max-h-56 overflow-y-auto">
-                {grimoires.map((g) => (
+                {spellbooks.map((g) => (
                   <label
                     key={g.id}
                     className="flex cursor-pointer items-center gap-3 px-3 py-2.5 text-sm transition-colors hover:bg-accent/40 [&:not(:last-child)]:border-b"

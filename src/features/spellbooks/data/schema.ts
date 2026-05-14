@@ -1,7 +1,7 @@
 import { z } from "zod"
 
-export const GrimoireSchema = z.object({
-  id: z.string().uuid("Invalid grimoire id (expected UUID)"),
+export const SpellbookSchema = z.object({
+  id: z.string().uuid("Invalid spellbook id (expected UUID)"),
   name: z.string().min(1, "Name must not be empty"),
   spellSlugs: z.array(z.string(), { error: "spellSlugs must be an array of strings" }),
   preparedSlugs: z.array(z.string()).default([]),
@@ -9,8 +9,8 @@ export const GrimoireSchema = z.object({
   updatedAt: z.number().int().positive("updatedAt must be a positive integer timestamp"),
 })
 
-export const GrimoiresExportSchema = z.array(GrimoireSchema, {
-  error: "Expected an array of grimoires",
+export const SpellbooksExportSchema = z.array(SpellbookSchema, {
+  error: "Expected an array of spellbooks",
 })
 
-export type GrimoiresExport = z.infer<typeof GrimoiresExportSchema>
+export type SpellbooksExport = z.infer<typeof SpellbooksExportSchema>

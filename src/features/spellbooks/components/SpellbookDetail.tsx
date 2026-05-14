@@ -1,4 +1,4 @@
-import type { Grimoire } from "../data/types"
+import type { Spellbook } from "../data/types"
 import type { Spell, School } from "@/features/spells/data/types"
 import { useLanguage } from "@/i18n/LanguageContext"
 import { Badge } from "@/components/ui/badge"
@@ -11,12 +11,12 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
-interface GrimoireDetailProps {
-  grimoire: Grimoire | null
+interface SpellbookDetailProps {
+  spellbook: Spellbook | null
   spellsBySlug: Map<string, Spell>
-  onRemoveSpell: (grimoireId: string, slug: string) => void
+  onRemoveSpell: (spellbookId: string, slug: string) => void
   onSelectSpell: (spell: Spell) => void
-  onTogglePrepared: (grimoireId: string, slug: string) => void
+  onTogglePrepared: (spellbookId: string, slug: string) => void
 }
 
 const LEVEL_COLORS: Record<number, string> = {
@@ -32,16 +32,16 @@ const LEVEL_COLORS: Record<number, string> = {
   9: "bg-rose-500/10 text-rose-700 dark:text-rose-300",
 }
 
-export const GrimoireDetail = ({
-  grimoire,
+export const SpellbookDetail = ({
+  spellbook,
   spellsBySlug,
   onRemoveSpell,
   onSelectSpell,
   onTogglePrepared,
-}: GrimoireDetailProps) => {
+}: SpellbookDetailProps) => {
   const { t } = useLanguage()
 
-  if (!grimoire) {
+  if (!spellbook) {
     return (
       <div className="flex flex-col items-center justify-center gap-2 rounded-lg border border-dashed py-16 text-center">
         <span className="text-sm font-medium text-muted-foreground">
@@ -54,7 +54,7 @@ export const GrimoireDetail = ({
     )
   }
 
-  const spells = grimoire.spellSlugs
+  const spells = spellbook.spellSlugs
     .map((slug) => spellsBySlug.get(slug))
     .filter((s): s is Spell => s !== undefined)
     .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
@@ -62,7 +62,7 @@ export const GrimoireDetail = ({
   return (
     <div className="flex flex-col gap-3">
       <div className="flex items-center justify-between">
-        <h3 className="font-semibold">{grimoire.name}</h3>
+        <h3 className="font-semibold">{spellbook.name}</h3>
         <span className="text-sm text-muted-foreground">
           {t("grimoire.spells.count", { count: spells.length })}
         </span>
@@ -92,7 +92,7 @@ export const GrimoireDetail = ({
             <TableBody>
               {spells.map((spell) => {
                 const isCantrip = spell.level === 0
-                const isPrepared = isCantrip || grimoire.preparedSlugs.includes(spell.slug)
+                const isPrepared = isCantrip || spellbook.preparedSlugs.includes(spell.slug)
                 return (
                   <TableRow key={spell.slug} className="group even:bg-muted/50">
                     <TableCell className="text-center">
@@ -100,7 +100,7 @@ export const GrimoireDetail = ({
                         type="checkbox"
                         checked={isPrepared}
                         disabled={isCantrip}
-                        onChange={() => onTogglePrepared(grimoire.id, spell.slug)}
+                        onChange={() => onTogglePrepared(spellbook.id, spell.slug)}
                         className="cursor-pointer accent-primary disabled:cursor-default disabled:opacity-40"
                       />
                     </TableCell>
@@ -126,7 +126,7 @@ export const GrimoireDetail = ({
                     </TableCell>
                     <TableCell>
                       <button
-                        onClick={() => onRemoveSpell(grimoire.id, spell.slug)}
+                        onClick={() => onRemoveSpell(spellbook.id, spell.slug)}
                         className="rounded p-1 text-muted-foreground opacity-0 transition-opacity hover:bg-destructive/10 hover:text-destructive group-hover:opacity-100"
                         title={t("grimoire.remove.spell")}
                       >

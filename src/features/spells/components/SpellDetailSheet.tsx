@@ -1,7 +1,7 @@
 import { useRef, useState } from "react"
 import type { Language, Spell, School, DndClass, SpellI18n } from "../data/types"
 import { useLanguage } from "@/i18n/LanguageContext"
-import { useGrimoiresContext } from "@/features/grimoires/GrimoiresContext"
+import { useSpellbooksContext } from "@/features/spellbooks/SpellbooksContext"
 import { Badge } from "@/components/ui/badge"
 import { DamageTypeBadge } from "./DamageTypeBadge"
 import {
@@ -37,10 +37,10 @@ const MetaRow = ({
   </div>
 )
 
-const GrimoireInfo = ({ spell }: { spell: Spell }) => {
+const SpellbookInfo = ({ spell }: { spell: Spell }) => {
   const { t } = useLanguage()
-  const { getGrimoiresContaining, removeSpell } = useGrimoiresContext()
-  const containing = getGrimoiresContaining(spell.slug)
+  const { getSpellbooksContaining, removeSpell } = useSpellbooksContext()
+  const containing = getSpellbooksContaining(spell.slug)
 
   if (containing.length === 0) return null
 
@@ -129,7 +129,7 @@ export const SpellDetailSheet = ({
                 ))}
               </div>
             )}
-            <GrimoireInfo spell={spell} />
+            <SpellbookInfo spell={spell} />
             {spellI18n.description && (
               <div className="space-y-2 border-t px-4 pt-4">
                 <h4 className="text-sm font-medium text-muted-foreground">

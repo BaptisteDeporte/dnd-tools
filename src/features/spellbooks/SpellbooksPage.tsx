@@ -2,27 +2,27 @@ import { useMemo, useState } from "react"
 import type { Spell } from "@/features/spells/data/types"
 import { buildSpellList } from "@/features/spells/data/spells"
 import { useLanguage } from "@/i18n/LanguageContext"
-import { useGrimoiresContext } from "./GrimoiresContext"
-import { GrimoireList } from "./components/GrimoireList"
-import { GrimoireDetail } from "./components/GrimoireDetail"
+import { useSpellbooksContext } from "./SpellbooksContext"
+import { SpellbookList } from "./components/SpellbookList"
+import { SpellbookDetail } from "./components/SpellbookDetail"
 import { ImportExportButtons } from "./components/ImportExportButtons"
-import { DuplicateGrimoireDialog } from "./components/DuplicateGrimoireDialog"
+import { DuplicateSpellbookDialog } from "./components/DuplicateSpellbookDialog"
 import { SpellDetailSheet } from "@/features/spells/components/SpellDetailSheet"
 import { Button } from "@/components/ui/button"
-import type { Grimoire } from "./data/types"
+import type { Spellbook } from "./data/types"
 
-export const GrimoiresPage = () => {
+export const SpellbooksPage = () => {
   const { lang } = useLanguage()
   const {
-    grimoires,
-    createGrimoire,
-    duplicateGrimoire,
-    renameGrimoire,
-    deleteGrimoire,
+    spellbooks,
+    createSpellbook,
+    duplicateSpellbook,
+    renameSpellbook,
+    deleteSpellbook,
     removeSpell,
-    importGrimoires,
+    importSpellbooks,
     togglePrepared,
-  } = useGrimoiresContext()
+  } = useSpellbooksContext()
 
   const spells = useMemo(() => buildSpellList(lang), [lang])
   const spellsBySlug = useMemo(
@@ -32,26 +32,25 @@ export const GrimoiresPage = () => {
 
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [selectedSpell, setSelectedSpell] = useState<Spell | null>(null)
-  const [duplicatingGrimoire, setDuplicatingGrimoire] = useState<Grimoire | null>(null)
+  const [duplicatingSpellbook, setDuplicatingSpellbook] = useState<Spellbook | null>(null)
 
-  const selectedGrimoire = grimoires.find((g) => g.id === selectedId) ?? null
+  const selectedSpellbook = spellbooks.find((g) => g.id === selectedId) ?? null
 
-  // If the selected grimoire was deleted, clear the selection
   const handleDelete = (id: string) => {
-    deleteGrimoire(id)
+    deleteSpellbook(id)
     if (selectedId === id) setSelectedId(null)
   }
 
   const handleCreate = (name: string) => {
-    const created = createGrimoire(name)
+    const created = createSpellbook(name)
     setSelectedId(created.id)
   }
 
-  if (grimoires.length === 0) {
+  if (spellbooks.length === 0) {
     return (
       <EmptyState
         onCreate={handleCreate}
-        onImport={importGrimoires}
+        onImport={importSpellbooks}
       />
     )
   }
@@ -59,23 +58,23 @@ export const GrimoiresPage = () => {
   return (
     <div className="flex flex-col gap-4">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-[280px_1fr]">
-        {/* Left — grimoire list */}
+        {/* Left — spellbook list */}
         <div className="flex flex-col gap-2">
-          <GrimoireList
-            grimoires={grimoires}
+          <SpellbookList
+            spellbooks={spellbooks}
             selectedId={selectedId}
             onSelect={setSelectedId}
             onCreate={handleCreate}
-            onRename={renameGrimoire}
+            onRename={renameSpellbook}
             onDelete={handleDelete}
-            onDuplicate={(id) => setDuplicatingGrimoire(grimoires.find((g) => g.id === id) ?? null)}
-            onImport={importGrimoires}
+            onDuplicate={(id) => setDuplicatingSpellbook(spellbooks.find((g) => g.id === id) ?? null)}
+            onImport={importSpellbooks}
           />
         </div>
 
-        {/* Right — grimoire detail */}
-        <GrimoireDetail
-          grimoire={selectedGrimoire}
+        {/* Right — spellbook detail */}
+        <SpellbookDetail
+          spellbook={selectedSpellbook}
           spellsBySlug={spellsBySlug}
           onRemoveSpell={removeSpell}
           onSelectSpell={setSelectedSpell}
@@ -88,15 +87,15 @@ export const GrimoiresPage = () => {
         onClose={() => setSelectedSpell(null)}
       />
 
-      <DuplicateGrimoireDialog
-        grimoire={duplicatingGrimoire}
+      <DuplicateSpellbookDialog
+        spellbook={duplicatingSpellbook}
         spellsBySlug={spellsBySlug}
         onConfirm={(name, spellSlugs) => {
-          const created = duplicateGrimoire(duplicatingGrimoire!.id, name, spellSlugs)
+          const created = duplicateSpellbook(duplicatingSpellbook!.id, name, spellSlugs)
           setSelectedId(created.id)
-          setDuplicatingGrimoire(null)
+          setDuplicatingSpellbook(null)
         }}
-        onClose={() => setDuplicatingGrimoire(null)}
+        onClose={() => setDuplicatingSpellbook(null)}
       />
     </div>
   )
@@ -104,7 +103,7 @@ export const GrimoiresPage = () => {
 
 interface EmptyStateProps {
   onCreate: (name: string) => void
-  onImport: (data: import("./data/schema").GrimoiresExport) => void
+  onImport: (data: import("./data/schema").SpellbooksExport) => void
 }
 
 const EmptyState = ({ onCreate, onImport }: EmptyStateProps) => {
@@ -174,7 +173,7 @@ const EmptyState = ({ onCreate, onImport }: EmptyStateProps) => {
             + {t("grimoire.new")}
           </Button>
           <ImportExportButtons
-            grimoires={[]}
+            spellbooks={[]}
             onImport={onImport}
           />
         </div>

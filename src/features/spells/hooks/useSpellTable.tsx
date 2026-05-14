@@ -11,7 +11,7 @@ import {
 import type { Spell, FilterState, School } from "../data/types"
 import { emptyFilters } from "../data/types"
 import { useLanguage } from "@/i18n/LanguageContext"
-import { useGrimoiresContext } from "@/features/grimoires/GrimoiresContext"
+import { useSpellbooksContext } from "@/features/spellbooks/SpellbooksContext"
 import { parseRange, parseDuration } from "../data/parse"
 import { CellWithTooltip } from "../components/CellWithTooltip"
 import { DamageTypeCell } from "../components/DamageTypeBadge"
@@ -31,7 +31,7 @@ const matchesBoolFilter = (filter: boolean | null, value: boolean): boolean =>
 
 export const useSpellTable = (spells: Spell[]) => {
   const { t } = useLanguage()
-  const { grimoires } = useGrimoiresContext()
+  const { spellbooks } = useSpellbooksContext()
   const [filters, setFilters] = useState<FilterState>(readInitialFilters)
   useSyncFiltersToURL(filters)
   const [sorting, setSorting] = useState<SortingState>([
@@ -40,8 +40,8 @@ export const useSpellTable = (spells: Spell[]) => {
   const [rowSelection, setRowSelection] = useState<RowSelectionState>({})
 
   const filteredSpells = useMemo(() => {
-    const selectedGrimoires = grimoires.filter((g) =>
-      filters.grimoires.includes(g.id)
+    const selectedSpellbooks = spellbooks.filter((g) =>
+      filters.spellbooks.includes(g.id)
     )
 
     return spells.filter((spell) => {
@@ -55,19 +55,19 @@ export const useSpellTable = (spells: Spell[]) => {
       if (!matchesArrayAny(filters.damageTypes, spell.damage_types)) return false
       if (filters.search !== "" && !spell.name.toLowerCase().includes(filters.search.toLowerCase())) return false
 
-      if (selectedGrimoires.length > 0) {
-        if (filters.grimoireMode === "exclude") {
-          // Exclude if the spell is in ANY selected grimoire
-          if (selectedGrimoires.some((g) => g.spellSlugs.includes(spell.slug))) return false
+      if (selectedSpellbooks.length > 0) {
+        if (filters.spellbookMode === "exclude") {
+          // Exclude if the spell is in ANY selected spellbook
+          if (selectedSpellbooks.some((g) => g.spellSlugs.includes(spell.slug))) return false
         } else {
-          // Include only if the spell is in ALL selected grimoires
-          if (!selectedGrimoires.every((g) => g.spellSlugs.includes(spell.slug))) return false
+          // Include only if the spell is in ALL selected spellbooks
+          if (!selectedSpellbooks.every((g) => g.spellSlugs.includes(spell.slug))) return false
         }
       }
 
       return true
     })
-  }, [spells, filters, grimoires])
+  }, [spells, filters, spellbooks])
 
   const columns = useMemo<ColumnDef<Spell>[]>(
     () => [
@@ -229,7 +229,7 @@ export const useSpellTable = (spells: Spell[]) => {
     filters.ritual !== null ||
     filters.sources.length > 0 ||
     filters.search !== "" ||
-    filters.grimoires.length > 0 ||
+    filters.spellbooks.length > 0 ||
     filters.damageTypes.length > 0
 
   const selectedSlugs = Object.keys(rowSelection).filter((k) => rowSelection[k])

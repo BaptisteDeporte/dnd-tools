@@ -17,7 +17,8 @@ React 19 + TypeScript + Vite SPA for browsing D&D spells with filtering, search,
 
 ### Key patterns
 
-- **Feature-based structure:** `src/features/<feature>/` contains page, components, data, and hooks for each feature. Currently only `spells`.
+- **Feature-based structure:** `src/features/<feature>/` contains page, components, data, and hooks for each feature. Features: `spells`, `spellbooks`.
+- **Naming convention:** All code identifiers (file names, directories, variables, types, functions) must be in English. No French words in code — even for D&D concepts (e.g. use `spellbook`, not `grimoire`).
 - **UI components:** shadcn/ui (base-nova style) in `src/components/ui/`, using Tailwind v4 via `@tailwindcss/vite` plugin. Add new components with `npx shadcn add <name>`.
 - **Path alias:** `@/` maps to `src/`.
 - **i18n:** Custom lightweight system in `src/i18n/`. Translations live in `src/i18n/translations.ts`. Use `useLanguage()` hook for `lang` and `t()`. Default language is French.

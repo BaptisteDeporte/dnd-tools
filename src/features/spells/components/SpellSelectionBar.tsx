@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react"
 import { useLanguage } from "@/i18n/LanguageContext"
-import { useGrimoiresContext } from "@/features/grimoires/GrimoiresContext"
+import { useSpellbooksContext } from "@/features/spellbooks/SpellbooksContext"
 import { Button } from "@/components/ui/button"
 
 interface SpellSelectionBarProps {
@@ -13,7 +13,7 @@ export const SpellSelectionBar = ({
   onClear,
 }: SpellSelectionBarProps) => {
   const { t } = useLanguage()
-  const { grimoires, addSpells, createGrimoire } = useGrimoiresContext()
+  const { spellbooks, addSpells, createSpellbook } = useSpellbooksContext()
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const [creatingNew, setCreatingNew] = useState(false)
   const [newName, setNewName] = useState("")
@@ -38,8 +38,8 @@ export const SpellSelectionBar = ({
 
   if (selectedSlugs.length === 0) return null
 
-  const handleAddToGrimoire = (grimoireId: string) => {
-    addSpells(grimoireId, selectedSlugs)
+  const handleAddToSpellbook = (spellbookId: string) => {
+    addSpells(spellbookId, selectedSlugs)
     setDropdownOpen(false)
     onClear()
   }
@@ -47,7 +47,7 @@ export const SpellSelectionBar = ({
   const handleCreateAndAdd = () => {
     const trimmed = newName.trim()
     if (!trimmed) return
-    const created = createGrimoire(trimmed)
+    const created = createSpellbook(trimmed)
     addSpells(created.id, selectedSlugs)
     setDropdownOpen(false)
     setCreatingNew(false)
@@ -67,7 +67,7 @@ export const SpellSelectionBar = ({
 
         <span className="h-4 w-px bg-border" />
 
-        {/* Add to grimoire dropdown */}
+        {/* Add to spellbook dropdown */}
         <div className="relative" ref={dropdownRef}>
           <Button
             size="sm"
@@ -93,12 +93,12 @@ export const SpellSelectionBar = ({
 
           {dropdownOpen && (
             <div className="absolute bottom-full left-0 mb-2 min-w-48 rounded-lg border bg-popover p-1 shadow-md">
-              {grimoires.length > 0 && (
+              {spellbooks.length > 0 && (
                 <>
-                  {grimoires.map((g) => (
+                  {spellbooks.map((g) => (
                     <button
                       key={g.id}
-                      onClick={() => handleAddToGrimoire(g.id)}
+                      onClick={() => handleAddToSpellbook(g.id)}
                       className="flex w-full items-center justify-between rounded-sm px-3 py-1.5 text-sm hover:bg-accent"
                     >
                       <span className="truncate">{g.name}</span>

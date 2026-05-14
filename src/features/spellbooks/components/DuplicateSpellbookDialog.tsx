@@ -2,42 +2,42 @@ import { useState, useRef, useEffect } from "react"
 import { Dialog } from "@base-ui/react/dialog"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/i18n/LanguageContext"
-import type { Grimoire } from "../data/types"
+import type { Spellbook } from "../data/types"
 import type { Spell } from "@/features/spells/data/types"
 import { cn } from "@/lib/utils"
 
-interface DuplicateGrimoireDialogProps {
-  grimoire: Grimoire | null
+interface DuplicateSpellbookDialogProps {
+  spellbook: Spellbook | null
   spellsBySlug: Map<string, Spell>
   onConfirm: (name: string, spellSlugs: string[]) => void
   onClose: () => void
 }
 
-export const DuplicateGrimoireDialog = ({
-  grimoire,
+export const DuplicateSpellbookDialog = ({
+  spellbook,
   spellsBySlug,
   onConfirm,
   onClose,
-}: DuplicateGrimoireDialogProps) => {
+}: DuplicateSpellbookDialogProps) => {
   const { t } = useLanguage()
   const [name, setName] = useState("")
   const [selectedSlugs, setSelectedSlugs] = useState<Set<string>>(new Set())
   const inputRef = useRef<HTMLInputElement>(null)
   const selectAllRef = useRef<HTMLInputElement>(null)
 
-  const spells = grimoire
-    ? (grimoire.spellSlugs
+  const spells = spellbook
+    ? (spellbook.spellSlugs
         .map((slug) => spellsBySlug.get(slug))
         .filter(Boolean) as Spell[])
         .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
     : []
 
   useEffect(() => {
-    if (grimoire) {
-      setName(`${grimoire.name} - clone`)
-      setSelectedSlugs(new Set(grimoire.spellSlugs))
+    if (spellbook) {
+      setName(`${spellbook.name} - clone`)
+      setSelectedSlugs(new Set(spellbook.spellSlugs))
     }
-  }, [grimoire])
+  }, [spellbook])
 
   const allSelected = spells.length > 0 && selectedSlugs.size === spells.length
   const someSelected = selectedSlugs.size > 0 && selectedSlugs.size < spells.length
@@ -76,7 +76,7 @@ export const DuplicateGrimoireDialog = ({
     "fixed inset-0 z-50 bg-black/20 backdrop-blur-sm transition-opacity duration-150 data-ending-style:opacity-0 data-starting-style:opacity-0"
 
   return (
-    <Dialog.Root open={grimoire !== null} onOpenChange={(open) => !open && onClose()}>
+    <Dialog.Root open={spellbook !== null} onOpenChange={(open) => !open && onClose()}>
       <Dialog.Portal>
         <Dialog.Backdrop className={backdropCls} />
         <Dialog.Popup className={popupCls}>

@@ -1,24 +1,24 @@
 import { useState, useRef, useEffect } from "react"
-import type { Grimoire } from "../data/types"
+import type { Spellbook } from "../data/types"
 import { useLanguage } from "@/i18n/LanguageContext"
 import { Button } from "@/components/ui/button"
 import { ImportExportButtons } from "./ImportExportButtons"
 
-import type { GrimoiresExport } from "../data/schema"
+import type { SpellbooksExport } from "../data/schema"
 
-interface GrimoireListProps {
-  grimoires: Grimoire[]
+interface SpellbookListProps {
+  spellbooks: Spellbook[]
   selectedId: string | null
   onSelect: (id: string) => void
   onCreate: (name: string) => void
   onRename: (id: string, newName: string) => void
   onDelete: (id: string) => void
   onDuplicate: (id: string) => void
-  onImport: (data: GrimoiresExport) => void
+  onImport: (data: SpellbooksExport) => void
 }
 
-interface GrimoireItemProps {
-  grimoire: Grimoire
+interface SpellbookItemProps {
+  spellbook: Spellbook
   isSelected: boolean
   onSelect: () => void
   onRename: (newName: string) => void
@@ -26,18 +26,18 @@ interface GrimoireItemProps {
   onDuplicate: () => void
 }
 
-const GrimoireItem = ({
-  grimoire,
+const SpellbookItem = ({
+  spellbook,
   isSelected,
   onSelect,
   onRename,
   onDelete,
   onDuplicate,
-}: GrimoireItemProps) => {
+}: SpellbookItemProps) => {
   const { t } = useLanguage()
   const [isRenaming, setIsRenaming] = useState(false)
   const [isConfirmingDelete, setIsConfirmingDelete] = useState(false)
-  const [nameValue, setNameValue] = useState(grimoire.name)
+  const [nameValue, setNameValue] = useState(spellbook.name)
   const inputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
@@ -49,7 +49,7 @@ const GrimoireItem = ({
 
   const handleRenameSubmit = () => {
     const trimmed = nameValue.trim()
-    if (trimmed && trimmed !== grimoire.name) {
+    if (trimmed && trimmed !== spellbook.name) {
       onRename(trimmed)
     }
     setIsRenaming(false)
@@ -58,7 +58,7 @@ const GrimoireItem = ({
   const handleRenameKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") handleRenameSubmit()
     if (e.key === "Escape") {
-      setNameValue(grimoire.name)
+      setNameValue(spellbook.name)
       setIsRenaming(false)
     }
   }
@@ -106,14 +106,14 @@ const GrimoireItem = ({
           <span
             className={`truncate text-sm font-medium ${isSelected ? "text-primary" : ""}`}
           >
-            {grimoire.name}
+            {spellbook.name}
           </span>
           <div className="flex shrink-0 items-center gap-1 opacity-0 transition-opacity group-hover:opacity-100">
             <button
               onClick={(e) => {
                 e.stopPropagation()
                 setIsConfirmingDelete(false)
-                setNameValue(grimoire.name)
+                setNameValue(spellbook.name)
                 setIsRenaming(true)
               }}
               className="rounded p-0.5 text-muted-foreground hover:bg-accent hover:text-foreground"
@@ -159,7 +159,7 @@ const GrimoireItem = ({
 
       {!isRenaming && (
         <div className="mt-0.5 text-xs text-muted-foreground">
-          {t("grimoire.spells.count", { count: grimoire.spellSlugs.length })}
+          {t("grimoire.spells.count", { count: spellbook.spellSlugs.length })}
         </div>
       )}
 
@@ -235,8 +235,8 @@ const CreateForm = ({ onSubmit, onCancel }: CreateFormProps) => {
   )
 }
 
-export const GrimoireList = ({
-  grimoires,
+export const SpellbookList = ({
+  spellbooks,
   selectedId,
   onSelect,
   onCreate,
@@ -244,7 +244,7 @@ export const GrimoireList = ({
   onDelete,
   onDuplicate,
   onImport,
-}: GrimoireListProps) => {
+}: SpellbookListProps) => {
   const { t } = useLanguage()
   const [isCreating, setIsCreating] = useState(false)
 
@@ -252,13 +252,13 @@ export const GrimoireList = ({
     <div className="flex flex-col gap-2">
       <div className="flex items-center justify-between gap-1">
         <span className="shrink-0 whitespace-nowrap text-sm font-medium text-muted-foreground">
-          {grimoires.length > 0
-            ? `${grimoires.length} grimoire${grimoires.length > 1 ? "s" : ""}`
+          {spellbooks.length > 0
+            ? `${spellbooks.length} spellbook${spellbooks.length > 1 ? "s" : ""}`
             : ""}
         </span>
         <div className="flex items-center gap-1">
           <ImportExportButtons
-            grimoires={grimoires}
+            spellbooks={spellbooks}
             onImport={onImport}
           />
           {!isCreating && (
@@ -280,10 +280,10 @@ export const GrimoireList = ({
       )}
 
       <div className="flex flex-col gap-1.5">
-        {grimoires.map((g) => (
-          <GrimoireItem
+        {spellbooks.map((g) => (
+          <SpellbookItem
             key={g.id}
-            grimoire={g}
+            spellbook={g}
             isSelected={selectedId === g.id}
             onSelect={() => onSelect(g.id)}
             onRename={(name) => onRename(g.id, name)}

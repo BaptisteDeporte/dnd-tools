@@ -3,10 +3,10 @@ import { LanguageProvider, useLanguage } from "@/i18n/LanguageContext"
 import { LanguageToggle } from "@/components/LanguageToggle"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { SpellsPage } from "@/features/spells/SpellsPage"
-import { GrimoiresPage } from "@/features/grimoires/GrimoiresPage"
-import { GrimoiresProvider } from "@/features/grimoires/GrimoiresContext"
+import { SpellbooksPage } from "@/features/spellbooks/SpellbooksPage"
+import { SpellbooksProvider } from "@/features/spellbooks/SpellbooksContext"
 
-type Tab = "spells" | "grimoires"
+type Tab = "spells" | "spellbooks"
 
 const AppContent = () => {
   const { t } = useLanguage()
@@ -28,13 +28,13 @@ const AppContent = () => {
         />
         <TabButton
           label={t("tab.grimoires")}
-          active={activeTab === "grimoires"}
-          onClick={() => setActiveTab("grimoires")}
+          active={activeTab === "spellbooks"}
+          onClick={() => setActiveTab("spellbooks")}
         />
       </nav>
 
       <main>
-        {activeTab === "spells" ? <SpellsPage /> : <GrimoiresPage />}
+        {activeTab === "spells" ? <SpellsPage /> : <SpellbooksPage />}
       </main>
     </div>
   )
@@ -63,11 +63,11 @@ const TabButton = ({
 
 const App = () => (
   <LanguageProvider>
-    <GrimoiresProvider>
+    <SpellbooksProvider>
       <TooltipProvider delay={500}>
         <AppContent />
       </TooltipProvider>
-    </GrimoiresProvider>
+    </SpellbooksProvider>
   </LanguageProvider>
 )
 

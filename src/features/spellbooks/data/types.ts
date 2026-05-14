@@ -1,4 +1,4 @@
-export interface Grimoire {
+export interface Spellbook {
   id: string
   name: string
   spellSlugs: string[]

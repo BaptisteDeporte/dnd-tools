@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef } from "react"
-import type { FilterState, School, DndClass, Component, GrimoireFilterMode, DamageType } from "../data/types"
+import type { FilterState, School, DndClass, Component, SpellbookFilterMode, DamageType } from "../data/types"
 import { emptyFilters } from "../data/types"
 
 const SCHOOLS: School[] = [
@@ -32,7 +32,7 @@ const parseLevels = (raw: string | null): number[] => {
   return raw.split(",").map(Number).filter((n) => !isNaN(n) && n >= 0 && n <= 9)
 }
 
-const parseGrimoireMode = (raw: string | null): GrimoireFilterMode => {
+const parseSpellbookMode = (raw: string | null): SpellbookFilterMode => {
   if (raw === "include-all") return "include-all"
   return "exclude"
 }
@@ -46,8 +46,8 @@ export const filtersFromSearchParams = (params: URLSearchParams): FilterState =>
   ritual: parseBool(params.get("ritual")),
   sources: params.get("sources")?.split(",").filter(Boolean) ?? [],
   search: params.get("q") ?? "",
-  grimoires: params.get("grimoires")?.split(",").filter(Boolean) ?? [],
-  grimoireMode: parseGrimoireMode(params.get("grimoireMode")),
+  spellbooks: params.get("spellbooks")?.split(",").filter(Boolean) ?? [],
+  spellbookMode: parseSpellbookMode(params.get("spellbookMode")),
   damageTypes: parseList(params.get("dmg"), DAMAGE_TYPES),
 })
 
@@ -61,9 +61,9 @@ export const filtersToSearchParams = (filters: FilterState): URLSearchParams => 
   if (filters.ritual !== null) params.set("ritual", filters.ritual ? "1" : "0")
   if (filters.sources.length > 0) params.set("sources", filters.sources.join(","))
   if (filters.search) params.set("q", filters.search)
-  if (filters.grimoires.length > 0) {
-    params.set("grimoires", filters.grimoires.join(","))
-    if (filters.grimoireMode !== "exclude") params.set("grimoireMode", filters.grimoireMode)
+  if (filters.spellbooks.length > 0) {
+    params.set("spellbooks", filters.spellbooks.join(","))
+    if (filters.spellbookMode !== "exclude") params.set("spellbookMode", filters.spellbookMode)
   }
   if (filters.damageTypes.length > 0) params.set("dmg", filters.damageTypes.join(","))
   return params
@@ -78,7 +78,7 @@ const isEmptyFilters = (filters: FilterState): boolean =>
   filters.ritual === null &&
   filters.sources.length === 0 &&
   filters.search === "" &&
-  filters.grimoires.length === 0 &&
+  filters.spellbooks.length === 0 &&
   filters.damageTypes.length === 0
 
 export const readInitialFilters = (): FilterState => {
