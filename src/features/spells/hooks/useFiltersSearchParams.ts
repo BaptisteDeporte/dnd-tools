@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef } from "react"
+import { useEffect, useRef } from "react"
 import type { FilterState, School, DndClass, Component, SpellbookFilterMode, DamageType } from "../data/types"
 import { emptyFilters } from "../data/types"
 
@@ -90,24 +90,20 @@ export const readInitialFilters = (): FilterState => {
 export const useSyncFiltersToURL = (filters: FilterState) => {
   const isFirstRender = useRef(true)
 
-  const sync = useCallback((f: FilterState) => {
-    const url = new URL(window.location.href)
-    if (isEmptyFilters(f)) {
-      if (url.search === "") return
-      url.search = ""
-    } else {
-      const newSearch = filtersToSearchParams(f).toString()
-      if (url.searchParams.toString() === newSearch) return
-      url.search = newSearch
-    }
-    window.history.replaceState(null, "", url.toString())
-  }, [])
-
   useEffect(() => {
     if (isFirstRender.current) {
       isFirstRender.current = false
       return
     }
-    sync(filters)
-  }, [filters, sync])
+    const url = new URL(window.location.href)
+    if (isEmptyFilters(filters)) {
+      if (url.search === "") return
+      url.search = ""
+    } else {
+      const newSearch = filtersToSearchParams(filters).toString()
+      if (url.searchParams.toString() === newSearch) return
+      url.search = newSearch
+    }
+    window.history.replaceState(null, "", url.toString())
+  }, [filters])
 }

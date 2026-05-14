@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react"
+import { useState } from "react"
 import type { Spellbook } from "../data/types"
 import type { SpellbooksExport } from "../data/schema"
 
@@ -19,167 +19,134 @@ const loadFromStorage = (): Spellbook[] => {
 export const useSpellbooks = () => {
   const [spellbooks, setSpellbooks] = useState<Spellbook[]>(loadFromStorage)
 
-  const persist = useCallback((updated: Spellbook[]) => {
+  const persist = (updated: Spellbook[]) => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(updated))
     setSpellbooks(updated)
-  }, [])
+  }
 
-  const createSpellbook = useCallback(
-    (name: string): Spellbook => {
-      const now = Date.now()
-      const spellbook: Spellbook = {
-        id: crypto.randomUUID(),
-        name: name.trim(),
-        spellSlugs: [],
-        preparedSlugs: [],
-        createdAt: now,
-        updatedAt: now,
-      }
-      const updated = [...spellbooks, spellbook]
-      persist(updated)
-      return spellbook
-    },
-    [spellbooks, persist]
-  )
+  const createSpellbook = (name: string): Spellbook => {
+    const now = Date.now()
+    const spellbook: Spellbook = {
+      id: crypto.randomUUID(),
+      name: name.trim(),
+      spellSlugs: [],
+      preparedSlugs: [],
+      createdAt: now,
+      updatedAt: now,
+    }
+    const updated = [...spellbooks, spellbook]
+    persist(updated)
+    return spellbook
+  }
 
-  const renameSpellbook = useCallback(
-    (id: string, newName: string) => {
-      persist(
-        spellbooks.map((g) =>
-          g.id === id
-            ? { ...g, name: newName.trim(), updatedAt: Date.now() }
-            : g
-        )
+  const renameSpellbook = (id: string, newName: string) => {
+    persist(
+      spellbooks.map((g) =>
+        g.id === id
+          ? { ...g, name: newName.trim(), updatedAt: Date.now() }
+          : g
       )
-    },
-    [spellbooks, persist]
-  )
+    )
+  }
 
-  const deleteSpellbook = useCallback(
-    (id: string) => {
-      persist(spellbooks.filter((g) => g.id !== id))
-    },
-    [spellbooks, persist]
-  )
+  const deleteSpellbook = (id: string) => {
+    persist(spellbooks.filter((g) => g.id !== id))
+  }
 
-  const addSpell = useCallback(
-    (spellbookId: string, spellSlug: string) => {
-      persist(
-        spellbooks.map((g) =>
-          g.id === spellbookId && !g.spellSlugs.includes(spellSlug)
-            ? {
-                ...g,
-                spellSlugs: [...g.spellSlugs, spellSlug],
-                updatedAt: Date.now(),
-              }
-            : g
-        )
+  const addSpell = (spellbookId: string, spellSlug: string) => {
+    persist(
+      spellbooks.map((g) =>
+        g.id === spellbookId && !g.spellSlugs.includes(spellSlug)
+          ? {
+              ...g,
+              spellSlugs: [...g.spellSlugs, spellSlug],
+              updatedAt: Date.now(),
+            }
+          : g
       )
-    },
-    [spellbooks, persist]
-  )
+    )
+  }
 
-  const addSpells = useCallback(
-    (spellbookId: string, spellSlugs: string[]) => {
-      persist(
-        spellbooks.map((g) => {
-          if (g.id !== spellbookId) return g
-          const toAdd = spellSlugs.filter((s) => !g.spellSlugs.includes(s))
-          if (toAdd.length === 0) return g
-          return {
-            ...g,
-            spellSlugs: [...g.spellSlugs, ...toAdd],
-            updatedAt: Date.now(),
-          }
-        })
+  const addSpells = (spellbookId: string, spellSlugs: string[]) => {
+    persist(
+      spellbooks.map((g) => {
+        if (g.id !== spellbookId) return g
+        const toAdd = spellSlugs.filter((s) => !g.spellSlugs.includes(s))
+        if (toAdd.length === 0) return g
+        return {
+          ...g,
+          spellSlugs: [...g.spellSlugs, ...toAdd],
+          updatedAt: Date.now(),
+        }
+      })
+    )
+  }
+
+  const removeSpell = (spellbookId: string, spellSlug: string) => {
+    persist(
+      spellbooks.map((g) =>
+        g.id === spellbookId
+          ? {
+              ...g,
+              spellSlugs: g.spellSlugs.filter((s) => s !== spellSlug),
+              updatedAt: Date.now(),
+            }
+          : g
       )
-    },
-    [spellbooks, persist]
-  )
+    )
+  }
 
-  const removeSpell = useCallback(
-    (spellbookId: string, spellSlug: string) => {
-      persist(
-        spellbooks.map((g) =>
-          g.id === spellbookId
-            ? {
-                ...g,
-                spellSlugs: g.spellSlugs.filter((s) => s !== spellSlug),
-                updatedAt: Date.now(),
-              }
-            : g
-        )
-      )
-    },
-    [spellbooks, persist]
-  )
+  const isSpellIn = (spellbookId: string, spellSlug: string): boolean =>
+    spellbooks.find((g) => g.id === spellbookId)?.spellSlugs.includes(spellSlug) ?? false
 
-  const isSpellIn = useCallback(
-    (spellbookId: string, spellSlug: string): boolean =>
-      spellbooks.find((g) => g.id === spellbookId)?.spellSlugs.includes(spellSlug) ?? false,
-    [spellbooks]
-  )
+  const getSpellbooksContaining = (spellSlug: string): Spellbook[] =>
+    spellbooks.filter((g) => g.spellSlugs.includes(spellSlug))
 
-  const getSpellbooksContaining = useCallback(
-    (spellSlug: string): Spellbook[] =>
-      spellbooks.filter((g) => g.spellSlugs.includes(spellSlug)),
-    [spellbooks]
-  )
+  const duplicateSpellbook = (sourceId: string, name: string, spellSlugs: string[]): Spellbook => {
+    const source = spellbooks.find((g) => g.id === sourceId)
+    const now = Date.now()
+    const spellbook: Spellbook = {
+      id: crypto.randomUUID(),
+      name: name.trim(),
+      spellSlugs,
+      preparedSlugs: source ? source.preparedSlugs.filter((s) => spellSlugs.includes(s)) : [],
+      createdAt: now,
+      updatedAt: now,
+    }
+    persist([...spellbooks, spellbook])
+    return spellbook
+  }
 
-  const duplicateSpellbook = useCallback(
-    (sourceId: string, name: string, spellSlugs: string[]): Spellbook => {
-      const source = spellbooks.find((g) => g.id === sourceId)
-      const now = Date.now()
-      const spellbook: Spellbook = {
-        id: crypto.randomUUID(),
-        name: name.trim(),
-        spellSlugs,
-        preparedSlugs: source ? source.preparedSlugs.filter((s) => spellSlugs.includes(s)) : [],
-        createdAt: now,
-        updatedAt: now,
-      }
-      persist([...spellbooks, spellbook])
-      return spellbook
-    },
-    [spellbooks, persist]
-  )
-
-  const togglePrepared = useCallback(
-    (spellbookId: string, spellSlug: string) => {
-      persist(
-        spellbooks.map((g) => {
-          if (g.id !== spellbookId) return g
-          const isPrepared = g.preparedSlugs.includes(spellSlug)
-          return {
-            ...g,
-            preparedSlugs: isPrepared
-              ? g.preparedSlugs.filter((s) => s !== spellSlug)
-              : [...g.preparedSlugs, spellSlug],
-            updatedAt: Date.now(),
-          }
-        })
-      )
-    },
-    [spellbooks, persist]
-  )
+  const togglePrepared = (spellbookId: string, spellSlug: string) => {
+    persist(
+      spellbooks.map((g) => {
+        if (g.id !== spellbookId) return g
+        const isPrepared = g.preparedSlugs.includes(spellSlug)
+        return {
+          ...g,
+          preparedSlugs: isPrepared
+            ? g.preparedSlugs.filter((s) => s !== spellSlug)
+            : [...g.preparedSlugs, spellSlug],
+          updatedAt: Date.now(),
+        }
+      })
+    )
+  }
 
   // Merge strategy: imported spellbooks with an existing ID overwrite the local
   // one; brand-new IDs are appended.
-  const importSpellbooks = useCallback(
-    (imported: SpellbooksExport) => {
-      const merged = [...spellbooks]
-      for (const g of imported) {
-        const idx = merged.findIndex((m) => m.id === g.id)
-        if (idx !== -1) {
-          merged[idx] = g
-        } else {
-          merged.push(g)
-        }
+  const importSpellbooks = (imported: SpellbooksExport) => {
+    const merged = [...spellbooks]
+    for (const g of imported) {
+      const idx = merged.findIndex((m) => m.id === g.id)
+      if (idx !== -1) {
+        merged[idx] = g
+      } else {
+        merged.push(g)
       }
-      persist(merged)
-    },
-    [spellbooks, persist]
-  )
+    }
+    persist(merged)
+  }
 
   return {
     spellbooks,
