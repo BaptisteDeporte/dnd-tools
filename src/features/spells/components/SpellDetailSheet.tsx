@@ -1,4 +1,5 @@
-import type { Spell, School, DndClass } from "../data/types"
+import { useRef, useState } from "react"
+import type { Language, Spell, School, DndClass, SpellI18n } from "../data/types"
 import { useLanguage } from "@/i18n/LanguageContext"
 import { useGrimoiresContext } from "@/features/grimoires/GrimoiresContext"
 import { Badge } from "@/components/ui/badge"
@@ -10,6 +11,13 @@ import {
   SheetTitle,
   SheetDescription,
 } from "@/components/ui/sheet"
+import enI18n from "../../../../data/spells.i18n.en.json"
+import frI18n from "../../../../data/spells.i18n.fr.json"
+
+const i18nMap: Record<Language, Record<string, SpellI18n>> = {
+  en: enI18n as Record<string, SpellI18n>,
+  fr: frI18n as Record<string, SpellI18n>,
+}
 
 interface SpellDetailSheetProps {
   spell: Spell | null
@@ -64,15 +72,24 @@ export const SpellDetailSheet = ({
   spell,
   onClose,
 }: SpellDetailSheetProps) => {
-  const { t } = useLanguage()
+  const { lang, t } = useLanguage()
+  const prevSlugRef = useRef<string | undefined>(spell?.slug)
+  const [localLang, setLocalLang] = useState<Language>(lang)
+
+  if (prevSlugRef.current !== spell?.slug) {
+    prevSlugRef.current = spell?.slug
+    setLocalLang(lang)
+  }
+
+  const spellI18n = spell ? i18nMap[localLang][spell.slug] : null
 
   return (
     <Sheet open={spell !== null} onOpenChange={(open) => !open && onClose()}>
       <SheetContent side="right" className="overflow-y-auto sm:max-w-lg">
-        {spell && (
+        {spell && spellI18n && (
           <>
             <SheetHeader>
-              <SheetTitle className="text-xl">{spell.name}</SheetTitle>
+              <SheetTitle className="text-xl">{spellI18n.name}</SheetTitle>
               <SheetDescription>
                 {spell.level === 0
                   ? `${t(`school.${spell.school}` as `school.${School}`)} ${t("level.cantrip").toLowerCase()}`
@@ -81,12 +98,12 @@ export const SpellDetailSheet = ({
             </SheetHeader>
             <div className="grid grid-cols-2 gap-4 px-4">
               <MetaRow label={t("detail.castingTime")}>
-                {spell.casting_time}
+                {spellI18n.casting_time}
               </MetaRow>
-              <MetaRow label={t("detail.range")}>{spell.range}</MetaRow>
-              <MetaRow label={t("detail.duration")}>{spell.duration}</MetaRow>
+              <MetaRow label={t("detail.range")}>{spellI18n.range}</MetaRow>
+              <MetaRow label={t("detail.duration")}>{spellI18n.duration}</MetaRow>
               <MetaRow label={t("detail.components")}>
-                {spell.components_detail}
+                {spellI18n.components_detail}
               </MetaRow>
               {spell.concentration && (
                 <MetaRow label={t("filter.concentration")}>✦</MetaRow>
@@ -113,20 +130,33 @@ export const SpellDetailSheet = ({
               </div>
             )}
             <GrimoireInfo spell={spell} />
-            {spell.description && (
+            {spellI18n.description && (
               <div className="space-y-2 border-t px-4 pt-4">
                 <h4 className="text-sm font-medium text-muted-foreground">
                   {t("detail.description")}
                 </h4>
                 <div className="text-sm leading-relaxed whitespace-pre-line">
-                  {spell.description}
+                  {spellI18n.description}
                 </div>
               </div>
             )}
-            <div className="border-t px-4 pt-4 pb-4">
-              <span className="text-xs text-muted-foreground">
-                {spell.source}
-              </span>
+            <div className="flex items-center justify-between border-t px-4 pt-4 pb-4">
+              <span className="text-xs text-muted-foreground">{spell.source}</span>
+              <div className="flex items-center gap-0.5 rounded-md border bg-muted p-0.5">
+                {(["fr", "en"] as Language[]).map((l) => (
+                  <button
+                    key={l}
+                    onClick={() => setLocalLang(l)}
+                    className={`rounded px-2 py-0.5 text-xs font-medium transition-colors ${
+                      localLang === l
+                        ? "bg-background text-foreground shadow-sm"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {l.toUpperCase()}
+                  </button>
+                ))}
+              </div>
             </div>
           </>
         )}
