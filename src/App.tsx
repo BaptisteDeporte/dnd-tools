@@ -5,8 +5,9 @@ import { TooltipProvider } from "@/components/ui/tooltip"
 import { SpellsPage } from "@/features/spells/SpellsPage"
 import { SpellbooksPage } from "@/features/spellbooks/SpellbooksPage"
 import { SpellbooksProvider } from "@/features/spellbooks/SpellbooksContext"
+import { ItemsPage } from "@/features/items/ItemsPage"
 
-type Tab = "spells" | "spellbooks"
+type Tab = "spells" | "spellbooks" | "items"
 
 const AppContent = () => {
   const { t } = useLanguage()
@@ -31,10 +32,17 @@ const AppContent = () => {
           active={activeTab === "spellbooks"}
           onClick={() => setActiveTab("spellbooks")}
         />
+        <TabButton
+          label={t("tab.items")}
+          active={activeTab === "items"}
+          onClick={() => setActiveTab("items")}
+        />
       </nav>
 
       <main>
-        {activeTab === "spells" ? <SpellsPage /> : <SpellbooksPage />}
+        {activeTab === "spells" && <SpellsPage />}
+        {activeTab === "spellbooks" && <SpellbooksPage />}
+        {activeTab === "items" && <ItemsPage />}
       </main>
     </div>
   )

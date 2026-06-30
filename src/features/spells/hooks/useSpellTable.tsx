@@ -16,18 +16,12 @@ import { parseRange, parseDuration } from "../data/parse"
 import { CellWithTooltip } from "../components/CellWithTooltip"
 import { DamageTypeCell } from "../components/DamageTypeBadge"
 import { readInitialFilters, useSyncFiltersToURL } from "./useFiltersSearchParams"
-
-const matchesMultiSelect = <T,>(filter: T[], value: T): boolean =>
-  filter.length === 0 || filter.includes(value)
-
-const matchesArrayAny = <T,>(filter: T[], values: T[]): boolean =>
-  filter.length === 0 || filter.some((f) => values.includes(f))
-
-const matchesArrayAll = <T,>(filter: T[], values: T[]): boolean =>
-  filter.length === 0 || filter.every((f) => values.includes(f))
-
-const matchesBoolFilter = (filter: boolean | null, value: boolean): boolean =>
-  filter === null || filter === value
+import {
+  matchesArrayAll,
+  matchesArrayAny,
+  matchesBoolFilter,
+  matchesMultiSelect,
+} from "@/lib/filters"
 
 export const useSpellTable = (spells: Spell[]) => {
   const { t } = useLanguage()
